@@ -83,8 +83,8 @@ using namespace std;
 
 
 // ppcoin: sync-checkpoint master key
-const std::string CSyncCheckpoint::strMainPubKey = "04b9ff17f2865bc685456429defb94fcb1ffc44a98703f0d62513fa47e7b76e4c6ab10b59e2c068d45f6a04b47bcee8b0fa50b33bfa53ff279a02863dbf1da6128";
-const std::string CSyncCheckpoint::strTestPubKey = "04db371d2b99df9e7962b2ce2369ada9821261e7f943a57a7ff3494d7d6c87939d3632fcaa2878bd5e45cfea0ea435fd6ee049a28ccbd0998ea3aadeb7abeed065";
+const std::string CSyncCheckpoint::strMainPubKey = "044dcec63e5257f488ad3b6d8d0e82465a0844c2479e472f743d17fcd19faf79d0b2a242036d15c4142ad8c29ec35de48dd53b43b925a4f9cf3d57f58cef2d691f";
+const std::string CSyncCheckpoint::strTestPubKey = "044dcec63e5257f488ad3b6d8d0e82465a0844c2479e472f743d17fcd19faf79d0b2a242036d15c4142ad8c29ec35de48dd53b43b925a4f9cf3d57f58cef2d691f";
 std::string CSyncCheckpoint::strMasterPrivKey = "";
 
 
@@ -232,8 +232,6 @@ bool AcceptPendingSyncCheckpoint()
 			            CValidationState state;
 			            //if (!SetBestChain(state, pindexCheckpoint))
 			            CBlock block(pindexCheckpoint->GetBlockHeader());
-			            CBlock *pblockCheckpoint = &block;
-			            //if (!ActivateBestChain(state, pblockCheckpoint))
 			            if (!true)
 			            {
 			            		LogPrintf("AcceptPendingSyncCheckpoint set hashInvalidCheckpoint .\n");
@@ -521,8 +519,6 @@ bool CSyncCheckpoint::ProcessSyncCheckpoint(CNode* pfrom)
 		        CValidationState state;
 		        //if (!SetBestChain(state, pindexCheckpoint))
 		        CBlock block(pindexCheckpoint->GetBlockHeader());
-		        CBlock *pblockCheckpoint = &block;
-		        //if (!ActivateBestChain(state,pblockCheckpoint))
 		        if (!true)
 		        {
 		        		LogPrintf("ProcessSyncCheckpoint set hashInvalidCheckpoint .\n");
@@ -622,4 +618,3 @@ Value enforcecheckpoint(const Array& params, bool fHelp)
     mapArgs["-checkpointenforce"] = (fEnforceCheckpoint ? "1" : "0");
     return Value::null;
 }
-

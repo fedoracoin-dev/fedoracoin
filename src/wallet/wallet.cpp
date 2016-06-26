@@ -2419,8 +2419,8 @@ bool CWallet::CreateStealthTransaction(CScript scriptPubKey, int64_t nValue, std
     vecSend.push_back(recipient);
     
     CScript scriptP = CScript() << OP_RETURN << P;
-    recipient = {scriptP, 0, fSubtractFeeFromAmount};
-    vecSend.push_back(recipient);
+    //recipient = {scriptP, 0, fSubtractFeeFromAmount};
+    //vecSend.push_back(recipient);
     
     // -- shuffle inputs, change output won't mix enough as it must be not fully random for plantext narrations
     std::random_shuffle(vecSend.begin(), vecSend.end());

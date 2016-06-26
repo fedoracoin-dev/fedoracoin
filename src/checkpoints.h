@@ -23,6 +23,7 @@ struct CCheckpointData {
     MapCheckpoints mapCheckpoints;
     int64_t nTimeLastCheckpoint;
     int64_t nTransactionsLastCheckpoint;
+    uint64_t nChainValueLastCheckpoint;
     double fTransactionsPerDay;
 };
 

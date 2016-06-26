@@ -13,6 +13,7 @@
 
 typedef int64_t CAmount;
 
+static const CAmount OLDCOIN = 500000000;
 static const CAmount COIN = 100000000;
 static const CAmount CENT = 1000000;
 
