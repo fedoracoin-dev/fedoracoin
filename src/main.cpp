@@ -82,8 +82,6 @@ bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
 
 static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Feathercoin: starting difficulty is 1 / 2^12
-/* The difficulty after switching to NeoScrypt (0.015625) */
-static CBigNum bnNeoScryptSwitch(~uint256(0) >> 26);
 
 
 /** Fees smaller than this (in satoshi) are considered zero fee (for transaction creation) */
@@ -2723,21 +2721,10 @@ bool CBlockHeader::CheckProofOfWork(int nHeight) const
 					}
 					return true;
 			}	
-			if (nHeight>=nForkFour)
+			if (!::CheckProofOfWork(GetPoWHashS(), nBits))
 			{
-				if (!::CheckProofOfWork(GetPoWHash(), nBits))
-				{
-						LogPrintf("CBlockHeader::CheckProofOfWork(),GetPoWHash in mainnet, nHeight=%i \n",nHeight);
-				    return error("CBlockHeader::CheckProofOfWork() GetPoWHash in mainnet: proof of work failed.");	
-				}
-			}
-			else
-			{
-				if (!::CheckProofOfWork(GetPoWHashS(), nBits))
-				{
-						LogPrintf("CBlockHeader::CheckProofOfWork(),GetPoWHashS in mainnet, nHeight=%i \n",nHeight);
-				    return error("CBlockHeader::CheckProofOfWork() GetPoWHashS in mainnet: proof of work failed.");	
-				}
+				LogPrintf("CBlockHeader::CheckProofOfWork(),GetPoWHashS in mainnet, nHeight=%i \n",nHeight);
+				return error("CBlockHeader::CheckProofOfWork() GetPoWHashS in mainnet: proof of work failed.");	
 			}
 	}
 	return true;
@@ -2961,11 +2948,8 @@ bool AcceptBlockHeader(CBlockHeader& block, CValidationState& state, CBlockIndex
         LogPrintf("AcceptBlockHeader,nHeight=%d \n",nHeight);
 
        
-        /* Don't accept blocks with bogus nVersion numbers after this point */
-        if (nHeight >= nForkFour)  {
-            if(block.nVersion < 2)
-                return(state.DoS(100, error("AcceptBlock() : incorrect block version")));
-        }
+        if(block.nVersion < 2)
+           return(state.DoS(100, error("AcceptBlock() : incorrect block version")));
         
         // Check proof of work
         unsigned int uiBits=GetNextWorkRequired(pindexPrev, &block);
