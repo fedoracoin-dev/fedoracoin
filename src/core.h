@@ -41,7 +41,8 @@ static const int AUXPOW_START_TESTNET = 158100;
 extern int nBestHeight;
 static const unsigned int LOCKTIME_THRESHOLD2 = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 500000000000u * COIN;
+static const uint64_t MAX_MONEY = 500000000000u * COIN;
+
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
 /** An outpoint - a combination of a transaction hash and an index n into its vout */
