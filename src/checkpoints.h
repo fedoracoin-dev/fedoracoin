@@ -15,6 +15,8 @@ class uint256;
  */
 namespace Checkpoints
 {
+    uint64_t GetLastCheckpointValue();
+
     // Returns true if block passes checkpoint checks
     bool CheckBlock(int nHeight, const uint256& hash);
 

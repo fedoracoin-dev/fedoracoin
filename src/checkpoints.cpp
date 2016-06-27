@@ -92,6 +92,12 @@ namespace Checkpoints
             return dataRegtest;
     }
 
+    uint64_t GetLastCheckpointValue()
+    {
+        if (TestNet()) return 0;
+        return data.nChainValueLastCheckpoint;
+    }
+
     bool CheckBlock(int nHeight, const uint256& hash)
     {
     	  if (TestNet()) return true; // Testnet has no checkpoints

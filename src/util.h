@@ -35,7 +35,7 @@
 class CNetAddr;
 class uint256;
 
-+tatic const int64_t OLDCOIN = 500000000;
+static const int64_t OLDCOIN = 500000000;
 static const int64_t COIN = 100000000;
 static const int64_t CENT = 1000000;
 
@@ -105,6 +105,7 @@ extern bool fNeoScrypt;
 extern bool fNoListen;
 extern bool fLogTimestamps;
 extern volatile bool fReopenDebugLog;
+long hex2long(const char* hexString);
 
 void RandAddSeed();
 void RandAddSeedPerfmon();
