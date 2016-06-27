@@ -40,7 +40,7 @@ class CInv;
 
 /* Maturity threshold for PoW base transactions, in blocks (confirmations) */
 extern int nBaseMaturity;
-static const int BASE_MATURITY = 100;
+static const int BASE_MATURITY = 30;
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
