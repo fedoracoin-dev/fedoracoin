@@ -1,4 +1,4 @@
-Name "Feathercoin Core (-bit)"
+Name "Fedoracoin Core (-bit)"
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -10,19 +10,19 @@ SetCompressor /SOLID lzma
 !define URL http://www.bitcoin.org/
 
 # MUI Symbol Definitions
-!define MUI_ICON "/home/wolfgang/workspace/Feathercoin/share/pixmaps/bitcoin.ico"
-!define MUI_WELCOMEFINISHPAGE_BITMAP "/home/wolfgang/workspace/Feathercoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_ICON "/root/fedoracoin-new/share/pixmaps/bitcoin.ico"
+!define MUI_WELCOMEFINISHPAGE_BITMAP "/root/fedoracoin-new/share/pixmaps/nsis-wizard.bmp"
 !define MUI_HEADERIMAGE
 !define MUI_HEADERIMAGE_RIGHT
-!define MUI_HEADERIMAGE_BITMAP "/home/wolfgang/workspace/Feathercoin/share/pixmaps/nsis-header.bmp"
+!define MUI_HEADERIMAGE_BITMAP "/root/fedoracoin-new/share/pixmaps/nsis-header.bmp"
 !define MUI_FINISHPAGE_NOAUTOCLOSE
 !define MUI_STARTMENUPAGE_REGISTRY_ROOT HKLM
 !define MUI_STARTMENUPAGE_REGISTRY_KEY ${REGKEY}
 !define MUI_STARTMENUPAGE_REGISTRY_VALUENAME StartMenuGroup
-!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Feathercoin Core"
+!define MUI_STARTMENUPAGE_DEFAULTFOLDER "Fedoracoin Core"
 !define MUI_FINISHPAGE_RUN $INSTDIR\bitcoin-qt.exe
 !define MUI_UNICON "${NSISDIR}\Contrib\Graphics\Icons\modern-uninstall.ico"
-!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/home/wolfgang/workspace/Feathercoin/share/pixmaps/nsis-wizard.bmp"
+!define MUI_UNWELCOMEFINISHPAGE_BITMAP "/root/fedoracoin-new/share/pixmaps/nsis-wizard.bmp"
 !define MUI_UNFINISHPAGE_NOAUTOCLOSE
 
 # Included files
@@ -48,7 +48,7 @@ Var StartMenuGroup
 !insertmacro MUI_LANGUAGE English
 
 # Installer attributes
-OutFile /home/wolfgang/workspace/Feathercoin/bitcoin-${VERSION}-win-setup.exe
+OutFile /root/fedoracoin-new/bitcoin-${VERSION}-win-setup.exe
 !if "" == "64"
 InstallDir $PROGRAMFILES64\Bitcoin
 !else
@@ -58,7 +58,7 @@ CRCCheck on
 XPStyle on
 BrandingText " "
 ShowInstDetails show
-VIProductVersion ${VERSION}.1
+VIProductVersion ${VERSION}.2
 VIAddVersionKey ProductName "Bitcoin Core"
 VIAddVersionKey ProductVersion "${VERSION}"
 VIAddVersionKey CompanyName "${COMPANY}"
@@ -73,14 +73,14 @@ ShowUninstDetails show
 Section -Main SEC0000
     SetOutPath $INSTDIR
     SetOverwrite on
-    File /home/wolfgang/workspace/Feathercoin/release/bitcoin-qt.exe
-    File /oname=COPYING.txt /home/wolfgang/workspace/Feathercoin/COPYING
-    File /oname=readme.txt /home/wolfgang/workspace/Feathercoin/doc/README_windows.txt
+    File /root/fedoracoin-new/release/bitcoin-qt.exe
+    File /oname=COPYING.txt /root/fedoracoin-new/COPYING
+    File /oname=readme.txt /root/fedoracoin-new/doc/README_windows.txt
     SetOutPath $INSTDIR\daemon
-    File /home/wolfgang/workspace/Feathercoin/release/bitcoind.exe
-    File /home/wolfgang/workspace/Feathercoin/release/bitcoin-cli.exe
+    File /root/fedoracoin-new/release/bitcoind.exe
+    File /root/fedoracoin-new/release/bitcoin-cli.exe
     SetOutPath $INSTDIR\doc
-    File /r /home/wolfgang/workspace/Feathercoin/doc\*.*
+    File /r /root/fedoracoin-new/doc\*.*
     SetOutPath $INSTDIR
     WriteRegStr HKCU "${REGKEY}\Components" Main 1
 

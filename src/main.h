@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin developers
-// Copyright (c) 2013-2015 The Feathercoin developers
+// Copyright (c) 2013-2015 The Fedoracoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -360,7 +360,7 @@ inline bool AllowFree(double dPriority)
 {
     // Large (in bytes) low-priority (new, small-coin) transactions
     // need a fee.
-    return dPriority > 100 * COIN * 1440 / 250;// Feathercoin: 1440 blocks found a day. Priority cutoff is 100 feathercoin day / 250 bytes.
+    return dPriority > 100 * COIN * 1440 / 250;// Fedoracoin: 1440 blocks found a day. Priority cutoff is 100 fedoracoin day / 250 bytes.
 }
 
 /** Get the maturity depth for coinbase transactions at a given height.

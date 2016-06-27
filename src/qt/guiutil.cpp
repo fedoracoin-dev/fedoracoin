@@ -97,7 +97,7 @@ void setupAddressWidget(QValidatedLineEdit *widget, QWidget *parent)
 
     widget->setFont(bitcoinAddressFont());
 #if QT_VERSION >= 0x040700
-    widget->setPlaceholderText(QObject::tr("Enter a Feathercoin address (e.g. 6djzFXtrfK8axEpEhSPe5o7YgJ16gFjSw7)"));
+    widget->setPlaceholderText(QObject::tr("Enter a Fedoracoin address (e.g. 6djzFXtrfK8axEpEhSPe5o7YgJ16gFjSw7)"));
 #endif
     widget->setValidator(new BitcoinAddressEntryValidator(parent));
     widget->setCheckValidator(new BitcoinAddressCheckValidator(parent));
@@ -115,7 +115,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
     // return if URI is not valid or is no bitcoin: URI
-    if(!uri.isValid() || uri.scheme() != QString("feathercoin"))
+    if(!uri.isValid() || uri.scheme() != QString("fedoracoin"))
         return false;
 
     SendCoinsRecipient rv;
@@ -151,7 +151,7 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
         {
             if(!i->second.isEmpty())
             {
-                if(!BitcoinUnits::parse(BitcoinUnits::FTC, i->second, &rv.amount))
+                if(!BitcoinUnits::parse(BitcoinUnits::TIPS, i->second, &rv.amount))
                 {
                     return false;
                 }
@@ -171,13 +171,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert feathercoin:// to feathercoin:
+    // Convert fedoracoin:// to fedoracoin:
     //
-    //    Cannot handle this later, because feathercoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because fedoracoin:// will cause Qt to see the part after // as host,
     //    which will lower-case it (and thus invalidate the address).
-    if(uri.startsWith("feathercoin://", Qt::CaseInsensitive))
+    if(uri.startsWith("fedoracoin://", Qt::CaseInsensitive))
     {
-        uri.replace(0, 14, "feathercoin:");
+        uri.replace(0, 14, "fedoracoin:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -185,12 +185,12 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 
 QString formatBitcoinURI(const SendCoinsRecipient &info)
 {
-    QString ret = QString("feathercoin:%1").arg(info.address);
+    QString ret = QString("fedoracoin:%1").arg(info.address);
     int paramCount = 0;
 
     if (info.amount)
     {
-        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::FTC, info.amount));
+        ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::TIPS, info.amount));
         paramCount++;
     }
 
@@ -587,7 +587,7 @@ TableViewLastColumnResizingFixer::TableViewLastColumnResizingFixer(QTableView* t
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "Feathercoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "Fedoracoin.lnk";
 }
 
 bool GetStartOnSystemStartup()
@@ -669,7 +669,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "feathercoin.desktop";
+    return GetAutostartDir() / "fedoracoin.desktop";
 }
 
 bool GetStartOnSystemStartup()

@@ -7,7 +7,7 @@ Release Process
 ###update (commit) version in sources
 
 
-	feathercoin-qt.pro
+	fedoracoin-qt.pro
 	contrib/verifysfbinaries/verify.sh
 	doc/README*
 	share/setup.nsi
@@ -25,11 +25,11 @@ Release Process
 
 ##perform gitian builds
 
- From a directory containing the feathercoin source, gitian-builder and gitian.sigs
+ From a directory containing the fedoracoin source, gitian-builder and gitian.sigs
   
 	export SIGNER=(your gitian key, ie bluematt, sipa, etc)
 	export VERSION=(new version, e.g. 0.8.0)
-	pushd ./feathercoin
+	pushd ./fedoracoin
 	git checkout v${VERSION}
 	popd
 	pushd ./gitian-builder
@@ -49,55 +49,55 @@ Release Process
 	wget 'https://download.qt-project.org/official_releases/qt/5.2/5.2.0/single/qt-everywhere-opensource-src-5.2.0.tar.gz'
 	wget 'https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.bz2'
 	cd ..
-	./bin/gbuild ../feathercoin/contrib/gitian-descriptors/boost-linux.yml
+	./bin/gbuild ../fedoracoin/contrib/gitian-descriptors/boost-linux.yml
 	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../feathercoin/contrib/gitian-descriptors/deps-linux.yml
-	mv build/out/feathercoin-deps-*.zip inputs/
-	./bin/gbuild ../feathercoin/contrib/gitian-descriptors/boost-win.yml
+	./bin/gbuild ../fedoracoin/contrib/gitian-descriptors/deps-linux.yml
+	mv build/out/fedoracoin-deps-*.zip inputs/
+	./bin/gbuild ../fedoracoin/contrib/gitian-descriptors/boost-win.yml
 	mv build/out/boost-*.zip inputs/
-	./bin/gbuild ../feathercoin/contrib/gitian-descriptors/deps-win.yml
-	mv build/out/feathercoin-deps-*.zip inputs/
-	./bin/gbuild ../feathercoin/contrib/gitian-descriptors/qt-win.yml
+	./bin/gbuild ../fedoracoin/contrib/gitian-descriptors/deps-win.yml
+	mv build/out/fedoracoin-deps-*.zip inputs/
+	./bin/gbuild ../fedoracoin/contrib/gitian-descriptors/qt-win.yml
 	mv build/out/qt-*.zip inputs/
-	./bin/gbuild ../feathercoin/contrib/gitian-descriptors/protobuf-win.yml
+	./bin/gbuild ../fedoracoin/contrib/gitian-descriptors/protobuf-win.yml
 	mv build/out/protobuf-*.zip inputs/
 
- Build feathercoind and feathercoin-qt on Linux32, Linux64, and Win32:
+ Build fedoracoind and fedoracoin-qt on Linux32, Linux64, and Win32:
   
-	./bin/gbuild --commit feathercoin=v${VERSION} ../feathercoin/contrib/gitian-descriptors/gitian-linux.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../feathercoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gbuild --commit fedoracoin=v${VERSION} ../fedoracoin/contrib/gitian-descriptors/gitian-linux.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION} --destination ../gitian.sigs/ ../fedoracoin/contrib/gitian-descriptors/gitian-linux.yml
 	pushd build/out
-	zip -r feathercoin-${VERSION}-linux-gitian.zip *
-	mv feathercoin-${VERSION}-linux-gitian.zip ../../../
+	zip -r fedoracoin-${VERSION}-linux-gitian.zip *
+	mv fedoracoin-${VERSION}-linux-gitian.zip ../../../
 	popd
-	./bin/gbuild --commit feathercoin=v${VERSION} ../feathercoin/contrib/gitian-descriptors/gitian-win.yml
-	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs/ ../feathercoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gbuild --commit fedoracoin=v${VERSION} ../fedoracoin/contrib/gitian-descriptors/gitian-win.yml
+	./bin/gsign --signer $SIGNER --release ${VERSION}-win --destination ../gitian.sigs/ ../fedoracoin/contrib/gitian-descriptors/gitian-win.yml
 	pushd build/out
-	zip -r feathercoin-${VERSION}-win-gitian.zip *
-	mv feathercoin-${VERSION}-win-gitian.zip ../../../
+	zip -r fedoracoin-${VERSION}-win-gitian.zip *
+	mv fedoracoin-${VERSION}-win-gitian.zip ../../../
 	popd
 	popd
 
   Build output expected:
 
-  1. linux 32-bit and 64-bit binaries + source (feathercoin-${VERSION}-linux-gitian.zip)
-  2. windows 32-bit and 64-bit binaries + installer + source (feathercoin-${VERSION}-win-gitian.zip)
+  1. linux 32-bit and 64-bit binaries + source (fedoracoin-${VERSION}-linux-gitian.zip)
+  2. windows 32-bit and 64-bit binaries + installer + source (fedoracoin-${VERSION}-win-gitian.zip)
   3. Gitian signatures (in gitian.sigs/${VERSION}[-win]/(your gitian key)/
 
 repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 **Linux .tar.gz:**
 
-	unzip feathercoin-${VERSION}-linux-gitian.zip -d feathercoin-${VERSION}-linux
-	tar czvf feathercoin-${VERSION}-linux.tar.gz feathercoin-${VERSION}-linux
-	rm -rf feathercoin-${VERSION}-linux
+	unzip fedoracoin-${VERSION}-linux-gitian.zip -d fedoracoin-${VERSION}-linux
+	tar czvf fedoracoin-${VERSION}-linux.tar.gz fedoracoin-${VERSION}-linux
+	rm -rf fedoracoin-${VERSION}-linux
 
 **Windows .zip and setup.exe:**
 
-	unzip feathercoin-${VERSION}-win-gitian.zip -d feathercoin-${VERSION}-win
-	mv feathercoin-${VERSION}-win/feathercoin-*-setup.exe .
-	zip -r feathercoin-${VERSION}-win.zip feathercoin-${VERSION}-win
-	rm -rf feathercoin-${VERSION}-win
+	unzip fedoracoin-${VERSION}-win-gitian.zip -d fedoracoin-${VERSION}-win
+	mv fedoracoin-${VERSION}-win/fedoracoin-*-setup.exe .
+	zip -r fedoracoin-${VERSION}-win.zip fedoracoin-${VERSION}-win
+	rm -rf fedoracoin-${VERSION}-win
 
 **Perform Mac build:**
 
@@ -110,9 +110,9 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 	export QTDIR=/opt/local/share/qt4  # needed to find translations/qt_*.qm files
 	T=$(contrib/qt_translations.py $QTDIR/translations src/qt/locale)
         export CODESIGNARGS='--keychain ...path_to_keychain --sign "Developer ID Application: BITCOIN FOUNDATION, INC., THE"'
-	python2.7 contrib/macdeploy/macdeployqtplus Feathercoin-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
+	python2.7 contrib/macdeploy/macdeployqtplus Fedoracoin-Qt.app -sign -add-qt-tr $T -dmg -fancy contrib/macdeploy/fancy.plist
 
- Build output expected: Feathercoin-Qt.dmg
+ Build output expected: Fedoracoin-Qt.dmg
 
 ###Next steps:
 
@@ -123,16 +123,16 @@ repackage gitian builds for release as stand-alone zip/tar/installer exe
 
 * create SHA256SUMS for builds, and PGP-sign it
 
-* update feathercoin.org version
+* update fedoracoin.org version
   make sure all OS download links go to the right versions
   
-* update download sizes on feathercoin.org/_templates/download.html
+* update download sizes on fedoracoin.org/_templates/download.html
 
 * update forum version
 
 * update wiki download links
 
-* update wiki changelog: [https://en.feathercoin.it/wiki/Changelog](https://en.feathercoin.it/wiki/Changelog)
+* update wiki changelog: [https://en.fedoracoin.it/wiki/Changelog](https://en.fedoracoin.it/wiki/Changelog)
 
 Commit your signature to gitian.sigs:
 
@@ -147,44 +147,44 @@ Commit your signature to gitian.sigs:
 
 ### After 3 or more people have gitian-built, repackage gitian-signed zips:
 
-From a directory containing feathercoin source, gitian.sigs and gitian zips
+From a directory containing fedoracoin source, gitian.sigs and gitian zips
 
 	export VERSION=(new version, e.g. 0.8.0)
-	mkdir feathercoin-${VERSION}-linux-gitian
-	pushd feathercoin-${VERSION}-linux-gitian
-	unzip ../feathercoin-${VERSION}-linux-gitian.zip
+	mkdir fedoracoin-${VERSION}-linux-gitian
+	pushd fedoracoin-${VERSION}-linux-gitian
+	unzip ../fedoracoin-${VERSION}-linux-gitian.zip
 	mkdir gitian
-	cp ../feathercoin/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../fedoracoin/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}/); do
-	 cp ../gitian.sigs/${VERSION}/${signer}/feathercoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}/${signer}/feathercoin-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}/${signer}/fedoracoin-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}/${signer}/fedoracoin-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r feathercoin-${VERSION}-linux-gitian.zip *
-	cp feathercoin-${VERSION}-linux-gitian.zip ../
+	zip -r fedoracoin-${VERSION}-linux-gitian.zip *
+	cp fedoracoin-${VERSION}-linux-gitian.zip ../
 	popd
-	mkdir feathercoin-${VERSION}-win-gitian
-	pushd feathercoin-${VERSION}-win-gitian
-	unzip ../feathercoin-${VERSION}-win-gitian.zip
+	mkdir fedoracoin-${VERSION}-win-gitian
+	pushd fedoracoin-${VERSION}-win-gitian
+	unzip ../fedoracoin-${VERSION}-win-gitian.zip
 	mkdir gitian
-	cp ../feathercoin/contrib/gitian-downloader/*.pgp ./gitian/
+	cp ../fedoracoin/contrib/gitian-downloader/*.pgp ./gitian/
 	for signer in $(ls ../gitian.sigs/${VERSION}-win/); do
-	 cp ../gitian.sigs/${VERSION}-win/${signer}/feathercoin-build.assert ./gitian/${signer}-build.assert
-	 cp ../gitian.sigs/${VERSION}-win/${signer}/feathercoin-build.assert.sig ./gitian/${signer}-build.assert.sig
+	 cp ../gitian.sigs/${VERSION}-win/${signer}/fedoracoin-build.assert ./gitian/${signer}-build.assert
+	 cp ../gitian.sigs/${VERSION}-win/${signer}/fedoracoin-build.assert.sig ./gitian/${signer}-build.assert.sig
 	done
-	zip -r feathercoin-${VERSION}-win-gitian.zip *
-	cp feathercoin-${VERSION}-win-gitian.zip ../
+	zip -r fedoracoin-${VERSION}-win-gitian.zip *
+	cp fedoracoin-${VERSION}-win-gitian.zip ../
 	popd
 
 - Upload gitian zips to SourceForge
 
 - Announce the release:
 
-  - Add the release to feathercoin.org: https://github.com/feathercoin/feathercoin.org/tree/master/_releases
+  - Add the release to fedoracoin.org: https://github.com/fedoracoin/fedoracoin.org/tree/master/_releases
 
-  - Release sticky on feathercointalk: https://feathercointalk.org/index.php?board=1.0
+  - Release sticky on fedoracointalk: https://fedoracointalk.org/index.php?board=1.0
 
-  - Feathercoin-development mailing list
+  - Fedoracoin-development mailing list
 
-  - Optionally reddit /r/Feathercoin, ...
+  - Optionally reddit /r/Fedoracoin, ...
 
 - Celebrate 

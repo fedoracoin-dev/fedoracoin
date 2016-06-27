@@ -13,11 +13,11 @@ endif
 bin_PROGRAMS =
 
 if BUILD_BITCOIND
-  bin_PROGRAMS += feathercoind
+  bin_PROGRAMS += fedoracoind
 endif
 
 if BUILD_BITCOIN_CLI
-  bin_PROGRAMS += feathercoin-cli
+  bin_PROGRAMS += fedoracoin-cli
 endif
 
 SUBDIRS = . $(BUILD_QT) $(BUILD_TEST)
@@ -160,36 +160,36 @@ libbitcoin_cli_a_SOURCES = \
 nodist_libbitcoin_common_a_SOURCES = $(top_srcdir)/src/obj/build.h
 #
 
-# feathercoind binary #
-feathercoind_LDADD = \
+# fedoracoind binary #
+fedoracoind_LDADD = \
   libbitcoin_server.a \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(LIBLEVELDB) \
   $(LIBMEMENV)
 if ENABLE_WALLET
-feathercoind_LDADD += libbitcoin_wallet.a
+fedoracoind_LDADD += libbitcoin_wallet.a
 endif
-feathercoind_SOURCES = feathercoind.cpp
+fedoracoind_SOURCES = fedoracoind.cpp
 #
 
 if TARGET_WINDOWS
-feathercoind_SOURCES += feathercoind-res.rc
+fedoracoind_SOURCES += fedoracoind-res.rc
 endif
 
 AM_CPPFLAGS += $(BDB_CPPFLAGS)
-feathercoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
+fedoracoind_LDADD += $(BOOST_LIBS) $(BDB_LIBS)
 
-# feathercoin-cli binary #
-feathercoin_cli_LDADD = \
+# fedoracoin-cli binary #
+fedoracoin_cli_LDADD = \
   libbitcoin_cli.a \
   libbitcoin_common.a \
   $(BOOST_LIBS)
-feathercoin_cli_SOURCES = feathercoin-cli.cpp
+fedoracoin_cli_SOURCES = fedoracoin-cli.cpp
 #
 
 if TARGET_WINDOWS
-feathercoin_cli_SOURCES += feathercoin-cli-res.rc
+fedoracoin_cli_SOURCES += fedoracoin-cli-res.rc
 endif
 
 # NOTE: This dependency is not strictly necessary, but without it make may try to build both in parallel, which breaks the LevelDB build system in a race

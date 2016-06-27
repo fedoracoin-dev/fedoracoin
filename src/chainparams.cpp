@@ -72,7 +72,7 @@ public:
 	vSeeds.push_back(CDNSSeedData("tips1.netcraft.ch", "tips1.netcraft.ch"));
 	vSeeds.push_back(CDNSSeedData("tips2.netcraft.ch", "tips2.netcraft.ch"));
 
-        //how to do feathercoin ?
+        //how to do fedoracoin ?
         base58Prefixes[PUBKEY_ADDRESS] = list_of(33); // FeatherCoin addresses start with F
         base58Prefixes[SCRIPT_ADDRESS_OLD] = list_of(5);
         base58Prefixes[SCRIPT_ADDRESS] = list_of(5);
@@ -137,10 +137,10 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-        //how to do feathercoin
+        //how to do fedoracoin
         //vSeeds.push_back(CDNSSeedData("bitcoin.petertodd.org", "testnet-seed.bitcoin.petertodd.org"));
         vSeeds.push_back(CDNSSeedData("115.29.37.248", "115.29.37.248"));//ftc-c.com
-        vSeeds.push_back(CDNSSeedData("feathercoin.com", "testnet-dnsseed.feathercoin.com"));
+        vSeeds.push_back(CDNSSeedData("fedoracoin.com", "testnet-dnsseed.fedoracoin.com"));
 
         // Boost sucks, and should not be used. Workaround for Boost not being compatible with C++11;
         

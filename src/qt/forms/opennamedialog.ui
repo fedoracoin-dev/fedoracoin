@@ -26,7 +26,7 @@
     <string>Commit into BlockChain</string>
    </property>
    <property name="icon">
-    <iconset resource="../feathercoin.qrc">
+    <iconset resource="../fedoracoin.qrc">
      <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
    </property>
   </widget>
@@ -107,7 +107,7 @@
     <string>Exit</string>
    </property>
    <property name="icon">
-    <iconset resource="../feathercoin.qrc">
+    <iconset resource="../fedoracoin.qrc">
      <normaloff>:/icons/quit</normaloff>:/icons/quit</iconset>
    </property>
   </widget>
@@ -240,7 +240,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../feathercoin.qrc"/>
+  <include location="../fedoracoin.qrc"/>
  </resources>
  <connections/>
 </ui>

@@ -1,6 +1,6 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
 // Copyright (c) 2009-2015 The Bitcoin developers
-// Copyright (c) 2013-2015 The Feathercoin developers
+// Copyright (c) 2013-2015 The Fedoracoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -32,7 +32,7 @@ using namespace std;
 using namespace boost;
 
 #if defined(NDEBUG)
-# error "Feathercoin cannot be compiled without assertions."
+# error "Fedoracoin cannot be compiled without assertions."
 #endif
 
 #if defined(_MSC_VER) || defined(__MSVCRT__)
@@ -81,7 +81,7 @@ bool fBenchmark = false;
 bool fTxIndex = false;
 unsigned int nCoinCacheSize = 5000;
 
-static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Feathercoin: starting difficulty is 1 / 2^12
+static CBigNum bnProofOfWorkLimit(~uint256(0) >> 20); // Fedoracoin: starting difficulty is 1 / 2^12
 /* The difficulty after switching to NeoScrypt (0.015625) */
 static CBigNum bnNeoScryptSwitch(~uint256(0) >> 26);
 
@@ -112,7 +112,7 @@ void EraseOrphansFor(NodeId peer);
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "Feathercoin Signed Message:\n";
+const string strMessageMagic = "Fedoracoin Signed Message:\n";
 
 // Internal stuff
 namespace {
@@ -1365,7 +1365,7 @@ uint64_t GetBlockValue(int nHeight, int64_t nFees, uint256 prevHash)
     return nSubsidy + nFees;
 }
 
-// Feathercoin: eHRC at 3rd hard fork
+// Fedoracoin: eHRC at 3rd hard fork
 int nTargetTimespan = 10 * 60; // 10 Minutes
 int nTargetSpacing = 60; // 1 minutes
 static const int64_t nInterval = nTargetTimespan / nTargetSpacing;
@@ -2087,7 +2087,7 @@ bool FindUndoPos(CValidationState &state, int nFile, CDiskBlockPos &pos, unsigne
 static CCheckQueue<CScriptCheck> scriptcheckqueue(128);
 
 void ThreadScriptCheck() {
-    RenameThread("feathercoin-scriptch");
+    RenameThread("fedoracoin-scriptch");
     scriptcheckqueue.Thread();
 }
 
@@ -2139,7 +2139,7 @@ bool ConnectBlock(CBlock& block, CValidationState& state, CBlockIndex* pindex, C
         }
     }
 
-    // BIP16 was always active in Feathercoin
+    // BIP16 was always active in Fedoracoin
     bool fStrictPayToScriptHash = true;
 
     unsigned int flags = SCRIPT_VERIFY_NOCACHE |
@@ -3098,7 +3098,7 @@ bool AcceptBlock(CBlock& block, CValidationState& state, CBlockIndex** ppindex, 
 
 bool CBlockIndex::IsSuperMajority(int minVersion, const CBlockIndex* pstart, unsigned int nRequired, unsigned int nToCheck)
 {
-    // Feathercoin: temporarily disable v2 block lockin until we are ready for v2 transition
+    // Fedoracoin: temporarily disable v2 block lockin until we are ready for v2 transition
     return false;
     
     unsigned int nFound = 0;
@@ -3139,7 +3139,7 @@ std::string CDiskBlockIndex::ToString() const
     str += strprintf("\n                hashBlock=%s, hashPrev=%s, hashParentBlock=%s)",
         GetBlockHash().ToString().c_str(),
         hashPrev.ToString().c_str(),
-        //feathercoin unuse (auxpow.get() != NULL) ? auxpow->GetParentBlockHash().ToString().substr(0,20).c_str() : "-"
+        //fedoracoin unuse (auxpow.get() != NULL) ? auxpow->GetParentBlockHash().ToString().substr(0,20).c_str() : "-"
         "0");
     return str;
 }

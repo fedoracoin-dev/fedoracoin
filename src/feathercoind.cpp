@@ -20,8 +20,8 @@
  *
  * \section intro_sec Introduction
  *
- * This is the developer documentation of the reference client for an experimental new digital currency called Feathercoin (http://www.feathercoin.com/),
- * which enables instant payments to anyone, anywhere in the world. Feathercoin uses peer-to-peer technology to operate
+ * This is the developer documentation of the reference client for an experimental new digital currency called Fedoracoin (http://www.fedoracoin.com/),
+ * which enables instant payments to anyone, anywhere in the world. Fedoracoin uses peer-to-peer technology to operate
  * with no central authority: managing transactions and issuing money are carried out collectively by the network.
  *
  * The software is a community-driven open source project, released under the MIT license.
@@ -63,7 +63,7 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/feathercoin.conf are parsed in qt/feathercoin.cpp's main()
+        // If Qt is used, parameters/fedoracoin.conf are parsed in qt/fedoracoin.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
@@ -85,14 +85,14 @@ bool AppInit(int argc, char* argv[])
 
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
-            // First part of help message is specific to feathercoind / RPC client
-            std::string strUsage = _("Feathercoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n\n" +
+            // First part of help message is specific to fedoracoind / RPC client
+            std::string strUsage = _("Fedoracoin Core Daemon") + " " + _("version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
-                  "  feathercoind [options]                     " + _("Start Feathercoin Core Daemon") + "\n" +
-                _("Usage (deprecated, use feathercoin-cli):") + "\n" +
-                  "  feathercoind [options] <command> [params]  " + _("Send command to Feathercoin Core") + "\n" +
-                  "  feathercoind [options] help                " + _("List commands") + "\n" +
-                  "  feathercoind [options] help <command>      " + _("Get help for a command") + "\n";
+                  "  fedoracoind [options]                     " + _("Start Fedoracoin Core Daemon") + "\n" +
+                _("Usage (deprecated, use fedoracoin-cli):") + "\n" +
+                  "  fedoracoind [options] <command> [params]  " + _("Send command to Fedoracoin Core") + "\n" +
+                  "  fedoracoind [options] help                " + _("List commands") + "\n" +
+                  "  fedoracoind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage(HMM_BITCOIND);
             strUsage += "\n" + HelpMessageCli(false);
@@ -104,7 +104,7 @@ bool AppInit(int argc, char* argv[])
         // Command-line RPC
         bool fCommandLine = false;
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "feathercoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "fedoracoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)
@@ -116,7 +116,7 @@ bool AppInit(int argc, char* argv[])
         fDaemon = GetBoolArg("-daemon", false);
         if (fDaemon)
         {
-            fprintf(stdout, "Feathercoin server starting\n");
+            fprintf(stdout, "Fedoracoin server starting\n");
 
             // Daemonize
             pid_t pid = fork();
@@ -176,7 +176,7 @@ int main(int argc, char* argv[])
 
     bool fRet = false;
 
-    // Connect feathercoind signal handlers
+    // Connect fedoracoind signal handlers
     noui_connect();
 
     fRet = AppInit(argc, argv);

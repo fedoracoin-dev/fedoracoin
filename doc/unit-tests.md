@@ -6,13 +6,13 @@ and tests weren't explicitly disabled.
 
 After configuring, they can be run with 'make check'.
 
-To run the feathercoind tests manually, launch src/test/test_feathercoin .
+To run the fedoracoind tests manually, launch src/test/test_fedoracoin .
 
-To add more feathercoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
+To add more fedoracoind tests, add `BOOST_AUTO_TEST_CASE` functions to the existing
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the feathercoin-qt tests manually, launch src/qt/test/feathercoin-qt_test
+To run the fedoracoin-qt tests manually, launch src/qt/test/fedoracoin-qt_test
 
-To add more feathercoin-qt tests, add them to the `src/qt/test/` directory and
+To add more fedoracoin-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

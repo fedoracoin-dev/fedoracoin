@@ -42,11 +42,11 @@ static bool AppInitRPC(int argc, char* argv[])
     if (argc<2 || mapArgs.count("-?") || mapArgs.count("--help"))
     {
         // First part of help message is specific to RPC client
-        std::string strUsage = _("Feathercoin Core RPC client version") + " " + FormatFullVersion() + "\n\n" +
+        std::string strUsage = _("Fedoracoin Core RPC client version") + " " + FormatFullVersion() + "\n\n" +
             _("Usage:") + "\n" +
-              "  feathercoin-cli [options] <command> [params]  " + _("Send command to Feathercoin Core") + "\n" +
-              "  feathercoin-cli [options] help                " + _("List commands") + "\n" +
-              "  feathercoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
+              "  fedoracoin-cli [options] <command> [params]  " + _("Send command to Fedoracoin Core") + "\n" +
+              "  fedoracoin-cli [options] help                " + _("List commands") + "\n" +
+              "  fedoracoin-cli [options] help <command>      " + _("Get help for a command") + "\n";
 
         strUsage += "\n" + HelpMessageCli(true);
 

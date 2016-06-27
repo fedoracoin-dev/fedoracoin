@@ -139,9 +139,9 @@ void MultiSigDialog::createRawTransaction()
     foreach(const SendCoinsRecipient &rcp, recipients)
     {
 #if QT_VERSION < 0x050000
-        formatted.append(tr("<b>%1</b> to %2 (%3)").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::FTC, rcp.amount), Qt::escape(rcp.label), rcp.address));
+        formatted.append(tr("<b>%1</b> to %2 (%3)").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::TIPS, rcp.amount), Qt::escape(rcp.label), rcp.address));
 #else
-        formatted.append(tr("<b>%1</b> to %2 (%3)").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::FTC, rcp.amount), rcp.label.toHtmlEscaped(), rcp.address));
+        formatted.append(tr("<b>%1</b> to %2 (%3)").arg(BitcoinUnits::formatWithUnit(BitcoinUnits::TIPS, rcp.amount), rcp.label.toHtmlEscaped(), rcp.address));
 #endif
     }
 
@@ -222,7 +222,7 @@ void MultiSigDialog::createRawTransaction()
     case WalletModel::AmountWithFeeExceedsBalance:
         QMessageBox::warning(this, tr("Send Coins"),
             tr("The total exceeds your balance when the %1 transaction fee is included.").
-            arg(BitcoinUnits::formatWithUnit(BitcoinUnits::FTC, sendstatus.fee)),
+            arg(BitcoinUnits::formatWithUnit(BitcoinUnits::TIPS, sendstatus.fee)),
             QMessageBox::Ok, QMessageBox::Ok);
         break;
     case WalletModel::DuplicateAddress:
@@ -266,8 +266,8 @@ void MultiSigDialog::importDraft()
 {
     QString filename = GUIUtil::getLoadFileName(
             this,
-            tr("Load Feathercoin Transaction"), QString(),
-            tr("Feathercoin transaction file (*.ftc)"));
+            tr("Load Fedoracoin Transaction"), QString(),
+            tr("Fedoracoin transaction file (*.ftc)"));
 
     if (filename.isNull()) return;
     
@@ -363,8 +363,8 @@ void MultiSigDialog::exportDraft()
     {
         QString filename = GUIUtil::getSaveFileName(
                 this,
-                tr("Save Feathercoin Transaction"), QString(),
-                tr("Feathercoin transaction file (*.ftc)"), NULL);
+                tr("Save Fedoracoin Transaction"), QString(),
+                tr("Fedoracoin transaction file (*.ftc)"), NULL);
 
         if (filename.isNull()) return;
 

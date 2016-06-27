@@ -27,13 +27,13 @@ int ReadWriteAuxPow(Stream& s, boost::shared_ptr<CAuxPow>& auxpow, int nType, in
 template <typename Stream>
 int ReadWriteAuxPow(Stream& s, const boost::shared_ptr<CAuxPow>& auxpow, int nType, int nVersion, CSerActionGetSerializeSize ser_action);
 
-// primary version, Feathercoin unuse
+// primary version, Fedoracoin unuse
 static const int BLOCK_VERSION_DEFAULT = (1 << 0);
 static const int BLOCK_VERSION_AUXPOW = (1 << 8);
 static const int BLOCK_VERSION_CHAIN_START = (1 << 16);
 static const int BLOCK_VERSION_CHAIN_END = (1 << 30);
 
-// DogeCoin aux chain ID = 0x0062 (98), Feathercoin unused
+// DogeCoin aux chain ID = 0x0062 (98), Fedoracoin unused
 static const int AUXPOW_CHAIN_ID = 0x0062;
 static const int AUXPOW_START_MAINNET = 371337;
 static const int AUXPOW_START_TESTNET = 158100;
@@ -187,7 +187,7 @@ public:
         // with default nMinRelayTxFee.
         //return ((nValue*1000)/(3*((int)GetSerializeSize(SER_DISK,0)+148)) < nMinRelayTxFee);
         
-        //Feathercoin IsDust() detection disabled
+        //Fedoracoin IsDust() detection disabled
         return false;
     }
 

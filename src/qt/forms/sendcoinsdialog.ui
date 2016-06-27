@@ -653,7 +653,7 @@
         <string>S&amp;end</string>
        </property>
        <property name="icon">
-        <iconset resource="../feathercoin.qrc">
+        <iconset resource="../fedoracoin.qrc">
          <normaloff>:/icons/send</normaloff>:/icons/send</iconset>
        </property>
        <property name="default">
@@ -676,7 +676,7 @@
         <string>Clear &amp;All</string>
        </property>
        <property name="icon">
-        <iconset resource="../feathercoin.qrc">
+        <iconset resource="../fedoracoin.qrc">
          <normaloff>:/icons/remove</normaloff>:/icons/remove</iconset>
        </property>
        <property name="autoRepeatDelay">
@@ -696,7 +696,7 @@
         <string>Add &amp;Recipient</string>
        </property>
        <property name="icon">
-        <iconset resource="../feathercoin.qrc">
+        <iconset resource="../fedoracoin.qrc">
          <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
        </property>
        <property name="autoDefault">
@@ -710,7 +710,7 @@
         <string>Send To &amp;QR</string>
        </property>
        <property name="icon">
-        <iconset resource="../feathercoin.qrc">
+        <iconset resource="../fedoracoin.qrc">
          <normaloff>:/icons/qrcode</normaloff>:/icons/qrcode</iconset>
        </property>
       </widget>
@@ -779,7 +779,7 @@
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../feathercoin.qrc"/>
+  <include location="../fedoracoin.qrc"/>
  </resources>
  <connections/>
 </ui>

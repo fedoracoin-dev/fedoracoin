@@ -15,9 +15,9 @@ BitcoinUnits::BitcoinUnits(QObject *parent):
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(FTC);
-    unitlist.append(mFTC);
-    unitlist.append(uFTC);
+    unitlist.append(TIPS);
+    unitlist.append(mTIPS);
+    unitlist.append(uTIPS);
     return unitlist;
 }
 
@@ -25,9 +25,9 @@ bool BitcoinUnits::valid(int unit)
 {
     switch(unit)
     {
-    case FTC:
-    case mFTC:
-    case uFTC:
+    case TIPS:
+    case mTIPS:
+    case uTIPS:
         return true;
     default:
         return false;
@@ -38,9 +38,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case FTC: return QString("FTC");
-    case mFTC: return QString("mFTC");
-    case uFTC: return QString::fromUtf8("μFTC");
+    case TIPS: return QString("TIPS");
+    case mTIPS: return QString("mTIPS");
+    case uTIPS: return QString::fromUtf8("μTIPS");
     default: return QString("???");
     }
 }
@@ -49,9 +49,9 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case FTC: return QString("Feathercoins");
-    case mFTC: return QString("Milli-Feathercoins (1 / 1,000)");
-    case uFTC: return QString("Micro-Feathercoins (1 / 1,000,000)");
+    case TIPS: return QString("Fedoracoins");
+    case mTIPS: return QString("Milli-Fedoracoins (1 / 1,000)");
+    case uTIPS: return QString("Micro-Fedoracoins (1 / 1,000,000)");
     default: return QString("???");
     }
 }
@@ -60,9 +60,9 @@ qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)
     {
-    case FTC:  return 100000000;
-    case mFTC: return 100000;
-    case uFTC: return 100;
+    case TIPS:  return 100000000;
+    case mTIPS: return 100000;
+    case uTIPS: return 100;
     default:   return 100000000;
     }
 }
@@ -71,9 +71,9 @@ qint64 BitcoinUnits::maxAmount(int unit)
 {
     switch(unit)
     {
-    case FTC:  return Q_INT64_C(336000000);     
-    case mFTC: return Q_INT64_C(336000000000);  
-    case uFTC: return Q_INT64_C(336000000000000);
+    case TIPS:  return Q_INT64_C(336000000);     
+    case mTIPS: return Q_INT64_C(336000000000);  
+    case uTIPS: return Q_INT64_C(336000000000000);
     default:   return 0;
     }
 }
@@ -82,9 +82,9 @@ int BitcoinUnits::amountDigits(int unit)
 {
     switch(unit)
     {
-    case FTC: return 9; // 336,000,000 (# digits, without commas)
-    case mFTC: return 12; // 336,000,000,000
-    case uFTC: return 15; // 336,000,000,000,000
+    case TIPS: return 9; // 336,000,000 (# digits, without commas)
+    case mTIPS: return 12; // 336,000,000,000
+    case uTIPS: return 15; // 336,000,000,000,000
     default: return 0;
     }
 }
@@ -93,9 +93,9 @@ int BitcoinUnits::decimals(int unit)
 {
     switch(unit)
     {
-    case FTC: return 8;
-    case mFTC: return 5;
-    case uFTC: return 2;
+    case TIPS: return 8;
+    case mTIPS: return 5;
+    case uTIPS: return 2;
     default: return 0;
     }
 }

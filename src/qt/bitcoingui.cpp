@@ -1,5 +1,5 @@
 // Copyright (c) 2011-2015 The Bitcoin developers
-// Copyright (c) 2013-2015 The Feathercoin developers
+// Copyright (c) 2013-2015 The Fedoracoin developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -85,7 +85,7 @@ BitcoinGUI::BitcoinGUI(bool fIsTestnet, QWidget *parent) :
 {
     GUIUtil::restoreWindowGeometry("nWindow", QSize(850, 550), this);
 
-    QString windowTitle = tr("Feathercoin Core") + " - ";
+    QString windowTitle = tr("Fedoracoin Core") + " - ";
 #ifdef ENABLE_WALLET
     /* if compiled with wallet support, -disablewallet can still disable the wallet */
     bool enableWallet = !GetBoolArg("-disablewallet", false);
@@ -247,14 +247,14 @@ void BitcoinGUI::createActions(bool fIsTestnet)
     tabGroup->addAction(overviewAction);
 
     sendCoinsAction = new QAction(QIcon(":/icons/send"), tr("&Send"), this);
-    sendCoinsAction->setStatusTip(tr("Send coins to a Feathercoin address"));
+    sendCoinsAction->setStatusTip(tr("Send coins to a Fedoracoin address"));
     sendCoinsAction->setToolTip(sendCoinsAction->statusTip());
     sendCoinsAction->setCheckable(true);
     sendCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_2));
     tabGroup->addAction(sendCoinsAction);
 
     receiveCoinsAction = new QAction(QIcon(":/icons/receiving_addresses"), tr("&Receive"), this);
-    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and feathercoin: URIs)"));
+    receiveCoinsAction->setStatusTip(tr("Request payments (generates QR codes and fedoracoin: URIs)"));
     receiveCoinsAction->setToolTip(receiveCoinsAction->statusTip());
     receiveCoinsAction->setCheckable(true);
     receiveCoinsAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_3));
@@ -301,10 +301,10 @@ void BitcoinGUI::createActions(bool fIsTestnet)
     quitAction->setShortcut(QKeySequence(Qt::CTRL + Qt::Key_Q));
     quitAction->setMenuRole(QAction::QuitRole);
     if (!fIsTestnet)
-        aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Feathercoin Core"), this);
+        aboutAction = new QAction(QIcon(":/icons/bitcoin"), tr("&About Fedoracoin Core"), this);
     else
-        aboutAction = new QAction(QIcon(":/icons/bitcoin_testnet"), tr("&About Feathercoin Core"), this);
-    aboutAction->setStatusTip(tr("Show information about Feathercoin"));
+        aboutAction = new QAction(QIcon(":/icons/bitcoin_testnet"), tr("&About Fedoracoin Core"), this);
+    aboutAction->setStatusTip(tr("Show information about Fedoracoin"));
     aboutAction->setMenuRole(QAction::AboutRole);
 #if QT_VERSION < 0x050000
     aboutQtAction = new QAction(QIcon(":/trolltech/qmessagebox/images/qtlogo-64.png"), tr("About &Qt"), this);
@@ -314,7 +314,7 @@ void BitcoinGUI::createActions(bool fIsTestnet)
     aboutQtAction->setStatusTip(tr("Show information about Qt"));
     aboutQtAction->setMenuRole(QAction::AboutQtRole);
     optionsAction = new QAction(QIcon(":/icons/options"), tr("&Options..."), this);
-    optionsAction->setStatusTip(tr("Modify configuration options for Feathercoin"));
+    optionsAction->setStatusTip(tr("Modify configuration options for Fedoracoin"));
     optionsAction->setMenuRole(QAction::PreferencesRole);
     if (!fIsTestnet)
         toggleHideAction = new QAction(QIcon(":/icons/bitcoin"), tr("&Show / Hide"), this);
@@ -330,9 +330,9 @@ void BitcoinGUI::createActions(bool fIsTestnet)
     changePassphraseAction = new QAction(QIcon(":/icons/key"), tr("&Change Passphrase..."), this);
     changePassphraseAction->setStatusTip(tr("Change the passphrase used for wallet encryption"));
     signMessageAction = new QAction(QIcon(":/icons/edit"), tr("Sign &message..."), this);
-    signMessageAction->setStatusTip(tr("Sign messages with your Feathercoin addresses to prove you own them"));
+    signMessageAction->setStatusTip(tr("Sign messages with your Fedoracoin addresses to prove you own them"));
     verifyMessageAction = new QAction(QIcon(":/icons/transaction_0"), tr("&Verify message..."), this);
-    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified Feathercoin addresses"));
+    verifyMessageAction->setStatusTip(tr("Verify messages to ensure they were signed with specified Fedoracoin addresses"));
     paperWalletAction = new QAction(QIcon(":/icons/print"), tr("&Print paper wallets"), this);
     paperWalletAction->setStatusTip(tr("Print paper wallets"));
     inertBlockChainAction = new QAction(QIcon(":/icons/comment"), tr("&Comments"), this);
@@ -359,21 +359,21 @@ void BitcoinGUI::createActions(bool fIsTestnet)
     usedReceivingAddressesAction->setStatusTip(tr("Show the list of used receiving addresses and labels"));
 
     openAction = new QAction(QIcon(":/icons/openurl"), tr("Open &URI..."), this);
-    openAction->setStatusTip(tr("Open a feathercoin: URI or payment request"));
+    openAction->setStatusTip(tr("Open a fedoracoin: URI or payment request"));
     
     bitmessageAction = new QAction(QIcon(":/icons/bitmessage"), tr("B&itmessage..."), this);
-    bitmessageAction->setStatusTip(tr("Start Bitmessage from feathercoin wallet"));
+    bitmessageAction->setStatusTip(tr("Start Bitmessage from fedoracoin wallet"));
     bitmessageAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_7));
     	
     shapeshiftAction = new QAction(QIcon(":/icons/shapeshift"), tr("Shapeshift..."), this);
-    shapeshiftAction->setStatusTip(tr("Exchange other coins whit your feathercoin on Shapeshift"));
+    shapeshiftAction->setStatusTip(tr("Exchange other coins whit your fedoracoin on Shapeshift"));
     shapeshiftAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_8));
     coinnectorAction = new QAction(QIcon(":/icons/coinnector"), tr("Coinnector..."), this);
-    coinnectorAction->setStatusTip(tr("Exchange other coins whit your feathercoin on Coinnector"));
+    coinnectorAction->setStatusTip(tr("Exchange other coins whit your fedoracoin on Coinnector"));
     coinnectorAction->setShortcut(QKeySequence(Qt::ALT + Qt::Key_9));
 
     showHelpMessageAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_MessageBoxInformation), tr("&Command-line options"), this);
-    showHelpMessageAction->setStatusTip(tr("Show the Feathercoin Core help message to get a list with possible Feathercoin command-line options"));
+    showHelpMessageAction->setStatusTip(tr("Show the Fedoracoin Core help message to get a list with possible Fedoracoin command-line options"));
 
     //connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
     connect(quitAction, SIGNAL(triggered()), walletFrame, SLOT(backupquitWallet()));
@@ -581,12 +581,12 @@ void BitcoinGUI::createTrayIcon(bool fIsTestnet)
 
     if (!fIsTestnet)
     {
-        trayIcon->setToolTip(tr("Feathercoin client"));
+        trayIcon->setToolTip(tr("Fedoracoin client"));
         trayIcon->setIcon(QIcon(":/icons/toolbar"));
     }
     else
     {
-        trayIcon->setToolTip(tr("Feathercoin client") + " " + tr("[testnet]"));
+        trayIcon->setToolTip(tr("Fedoracoin client") + " " + tr("[testnet]"));
         trayIcon->setIcon(QIcon(":/icons/toolbar_testnet"));
     }
 
@@ -773,7 +773,7 @@ void BitcoinGUI::setNumConnections(int count)
     default: icon = ":/icons/connect_4"; break;
     }
     labelConnectionsIcon->setPixmap(QIcon(icon).pixmap(STATUSBAR_ICONSIZE,STATUSBAR_ICONSIZE));
-    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Feathercoin network", "", count));
+    labelConnectionsIcon->setToolTip(tr("%n active connection(s) to Fedoracoin network", "", count));
 }
 
 void BitcoinGUI::setNumBlocks(int count)
@@ -886,7 +886,7 @@ void BitcoinGUI::setNumBlocks(int count)
 
 void BitcoinGUI::message(const QString &title, const QString &message, unsigned int style, bool *ret)
 {
-    QString strTitle = tr("Feathercoin"); // default title
+    QString strTitle = tr("Fedoracoin"); // default title
     // Default to information icon
     int nMBoxIcon = QMessageBox::Information;
     int nNotifyIcon = Notificator::Information;

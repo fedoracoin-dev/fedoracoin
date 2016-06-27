@@ -9,7 +9,7 @@
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
 
 /* Version Build */
-#define CLIENT_VERSION_BUILD 1
+#define CLIENT_VERSION_BUILD 2
 
 /* Version is release */
 #define CLIENT_VERSION_IS_RELEASE true
@@ -24,7 +24,7 @@
 #define CLIENT_VERSION_REVISION 3
 
 /* Version is release */
-#define COPYRIGHT_YEAR 2014
+#define COPYRIGHT_YEAR 2016
 
 /* Define to 1 to enable wallet functions */
 #define ENABLE_WALLET 1
@@ -51,7 +51,7 @@
 #define HAVE_BOOST_THREAD /**/
 
 /* define if the Boost::Unit_Test_Framework library is available */
-/* #undef HAVE_BOOST_UNIT_TEST_FRAMEWORK */
+#define HAVE_BOOST_UNIT_TEST_FRAMEWORK /**/
 
 /* Define to 1 if you have the declaration of `strerror_r', and to 0 if you
    don't. */
@@ -91,7 +91,7 @@
 /* #undef HAVE_LIBMINGWTHRD */
 
 /* Define to 1 if you have the `miniupnpc' library (-lminiupnpc). */
-#define HAVE_LIBMINIUPNPC 1
+/* #undef HAVE_LIBMINIUPNPC */
 
 /* Define to 1 if you have the `mswsock' library (-lmswsock). */
 /* #undef HAVE_LIBMSWSOCK */
@@ -109,7 +109,7 @@
 /* #undef HAVE_LIBPROTOBUF_ */
 
 /* Define to 1 if you have the `qrencode' library (-lqrencode). */
-#define HAVE_LIBQRENCODE 1
+/* #undef HAVE_LIBQRENCODE */
 
 /* Define to 1 if you have the `rpcrt4' library (-lrpcrt4). */
 /* #undef HAVE_LIBRPCRT4 */
@@ -139,7 +139,7 @@
 /* #undef HAVE_LIBWS2_32 */
 
 /* Define to 1 if you have the `zxing' library (-lzxing). */
-#define HAVE_LIBZXING 1
+/* #undef HAVE_LIBZXING */
 
 /* Define to 1 if you have the `z ' library (-lz ). */
 /* #undef HAVE_LIBZ_ */
@@ -148,16 +148,16 @@
 #define HAVE_MEMORY_H 1
 
 /* Define to 1 if you have the <miniupnpc/miniupnpc.h> header file. */
-#define HAVE_MINIUPNPC_MINIUPNPC_H 1
+/* #undef HAVE_MINIUPNPC_MINIUPNPC_H */
 
 /* Define to 1 if you have the <miniupnpc/miniwget.h> header file. */
-#define HAVE_MINIUPNPC_MINIWGET_H 1
+/* #undef HAVE_MINIUPNPC_MINIWGET_H */
 
 /* Define to 1 if you have the <miniupnpc/upnpcommands.h> header file. */
-#define HAVE_MINIUPNPC_UPNPCOMMANDS_H 1
+/* #undef HAVE_MINIUPNPC_UPNPCOMMANDS_H */
 
 /* Define to 1 if you have the <miniupnpc/upnperrors.h> header file. */
-#define HAVE_MINIUPNPC_UPNPERRORS_H 1
+/* #undef HAVE_MINIUPNPC_UPNPERRORS_H */
 
 /* Define this symbol if you have MSG_NOSIGNAL */
 #define HAVE_MSG_NOSIGNAL 1
@@ -166,7 +166,7 @@
 #define HAVE_PTHREAD 1
 
 /* Have PTHREAD_PRIO_INHERIT. */
-#define HAVE_PTHREAD_PRIO_INHERIT 1
+/* #undef HAVE_PTHREAD_PRIO_INHERIT */
 
 /* Define to 1 if you have the <stdint.h> header file. */
 #define HAVE_STDINT_H 1
@@ -196,22 +196,22 @@
 #define HAVE_UNISTD_H 1
 
 /* Define this symbol if boost sleep works */
-/* #undef HAVE_WORKING_BOOST_SLEEP */
+#define HAVE_WORKING_BOOST_SLEEP 1
 
 /* Define this symbol if boost sleep_for works */
-#define HAVE_WORKING_BOOST_SLEEP_FOR 1
+/* #undef HAVE_WORKING_BOOST_SLEEP_FOR */
 
 /* Define to the address where bug reports for this package should be sent. */
 #define PACKAGE_BUGREPORT "info@ftc-c.com"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "Feathercoin Core"
+#define PACKAGE_NAME "Fedoracoin Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "Feathercoin Core 0.9.3"
+#define PACKAGE_STRING "Fedoracoin Core 0.9.3"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "feathercoin"
+#define PACKAGE_TARNAME "fedoracoin"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -233,17 +233,17 @@
 #define STRERROR_R_CHAR_P 1
 
 /* Define if dbus support should be compiled in */
-#define USE_DBUS 1
+/* #undef USE_DBUS */
 
 /* Define if QR support should be compiled in */
-#define USE_QRCODE 1
+/* #undef USE_QRCODE */
 
 /* UPnP support not compiled if undefined, otherwise value (0 or 1) determines
    default state */
-#define USE_UPNP 0
+/* #undef USE_UPNP */
 
 /* Define if QR support should be compiled in */
-#define USE_ZXING 1
+/* #undef USE_ZXING */
 
 /* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
    significant byte first (like Motorola and SPARC, unlike Intel). */
@@ -263,7 +263,7 @@
 #endif
 
 /* Number of bits in a file offset, on hosts where this is settable. */
-/* #undef _FILE_OFFSET_BITS */
+#define _FILE_OFFSET_BITS 64
 
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */

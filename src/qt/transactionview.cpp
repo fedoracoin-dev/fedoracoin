@@ -448,7 +448,7 @@ void TransactionView::showTotal()
 	  for (int i=0;i<=transactionProxyModel->rowCount();i++)
 	  	fTotal+=transactionProxyModel->data(transactionProxyModel->index(i,4)).toFloat();
 
-    totalWidget->setText(tr("Date:")+dateWidget->currentText()+" "+tr("Type:")+typeWidget->currentText()+" "+tr("Total:")+QObject::tr("%1").arg(fTotal)+" FTC");
+    totalWidget->setText(tr("Date:")+dateWidget->currentText()+" "+tr("Type:")+typeWidget->currentText()+" "+tr("Total:")+QObject::tr("%1").arg(fTotal)+" TIPS");
 }
 
 void TransactionView::sendMess()
@@ -461,7 +461,7 @@ void TransactionView::sendMess()
     		QString address = selection.at(0).data(TransactionTableModel::AddressRole).toString();
     		QString amount = selection.at(0).data(TransactionTableModel::FormattedAmountRole).toString();
     		QString txid = selection.at(0).data(TransactionTableModel::TxIDRole).toString();
-    		QString txDesc="Sent "+amount+" FTC to you, TransactionID="+txid;
+    		QString txDesc="Sent "+amount+" TIPS to you, TransactionID="+txid;
     		
         QProcess *process = new QProcess;
         QString program="./bitmessagemain ";

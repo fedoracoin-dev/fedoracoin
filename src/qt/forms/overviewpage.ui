@@ -14,7 +14,7 @@
    <string>Form</string>
   </property>
   <property name="windowIcon">
-   <iconset resource="../feathercoin.qrc">
+   <iconset resource="../fedoracoin.qrc">
     <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
   </property>
   <property name="autoFillBackground">
@@ -68,7 +68,7 @@
             <item>
              <widget class="QLabel" name="labelWalletStatus">
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Feathercoin network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Fedoracoin network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>
@@ -131,7 +131,7 @@
                  <string>Your current spendable balance</string>
                 </property>
                 <property name="text">
-                 <string notr="true">0 FTC</string>
+                 <string notr="true">0 TIPS</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -163,7 +163,7 @@
                  <string>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</string>
                 </property>
                 <property name="text">
-                 <string notr="true">0 FTC</string>
+                 <string notr="true">0 TIPS</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -192,7 +192,7 @@
                  <string>Mined balance that has not yet matured</string>
                 </property>
                 <property name="text">
-                 <string notr="true">0 FTC</string>
+                 <string notr="true">0 TIPS</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -224,7 +224,7 @@
                  <string>Your current total balance</string>
                 </property>
                 <property name="text">
-                 <string notr="true">0 FTC</string>
+                 <string notr="true">0 TIPS</string>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -280,7 +280,7 @@
           <string/>
          </property>
          <property name="pixmap">
-          <pixmap resource="../feathercoin.qrc">:/images/mainlogo</pixmap>
+          <pixmap resource="../fedoracoin.qrc">:/images/mainlogo</pixmap>
          </property>
         </widget>
        </item>
@@ -309,7 +309,7 @@
             <item>
              <widget class="QLabel" name="labelTransactionsStatus">
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Feathercoin network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the Fedoracoin network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>
@@ -379,7 +379,7 @@
   </layout>
  </widget>
  <resources>
-  <include location="../feathercoin.qrc"/>
+  <include location="../fedoracoin.qrc"/>
  </resources>
  <connections/>
 </ui>

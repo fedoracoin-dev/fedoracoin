@@ -58,7 +58,7 @@
     <string>Very New Address</string>
    </property>
    <property name="icon">
-    <iconset resource="../feathercoin.qrc">
+    <iconset resource="../fedoracoin.qrc">
      <normaloff>:/icons/add</normaloff>:/icons/add</iconset>
    </property>
   </widget>
@@ -75,7 +75,7 @@
     <string notr="true"/>
    </property>
    <property name="pixmap">
-    <pixmap resource="../feathercoin.qrc">:/images/paper_wallet</pixmap>
+    <pixmap resource="../fedoracoin.qrc">:/images/paper_wallet</pixmap>
    </property>
   </widget>
   <widget class="VerticalLabel" name="addressText">
@@ -150,7 +150,7 @@
     <string>So Print</string>
    </property>
    <property name="icon">
-    <iconset resource="../feathercoin.qrc">
+    <iconset resource="../fedoracoin.qrc">
      <normaloff>:/icons/receiving_addresses</normaloff>:/icons/receiving_addresses</iconset>
    </property>
   </widget>
@@ -316,7 +316,7 @@ p, li { white-space: pre-wrap; }
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../feathercoin.qrc"/>
+  <include location="../fedoracoin.qrc"/>
  </resources>
  <connections>
   <connection>
