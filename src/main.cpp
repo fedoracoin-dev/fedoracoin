@@ -2948,11 +2948,7 @@ bool AcceptBlockHeader(CBlockHeader& block, CValidationState& state, CBlockIndex
         pindexPrev = (*mi).second;
         nHeight = pindexPrev->nHeight+1;
         LogPrintf("AcceptBlockHeader,nHeight=%d \n",nHeight);
-
        
-        if(block.nVersion < 2)
-           return(state.DoS(100, error("AcceptBlock() : incorrect block version")));
-        
         // Check proof of work
         unsigned int uiBits=GetNextWorkRequired(pindexPrev, &block);
         if (block.nBits !=uiBits )
