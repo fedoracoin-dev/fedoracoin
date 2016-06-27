@@ -5,13 +5,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Feathercoin Core</source>
-        <translation>About Feathercoin Core</translation>
+        <source>About Fedoracoin Core</source>
+        <translation>About Fedoracoin Core</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Feathercoin Core&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;Feathercoin Core&lt;/b&gt; version</translation>
+        <source>&lt;b&gt;Fedoracoin Core&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;Fedoracoin Core&lt;/b&gt; version</translation>
     </message>
     <message>
         <location line="+57"/>
@@ -36,8 +36,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Feathercoin Core developers</source>
-        <translation>The Feathercoin Core developers</translation>
+        <source>The Fedoracoin Core developers</source>
+        <translation>The Fedoracoin Core developers</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -130,13 +130,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Feathercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>These are your Feathercoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
+        <source>These are your Fedoracoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>These are your Fedoracoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Feathercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>These are your Feathercoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
+        <source>These are your Fedoracoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>These are your Fedoracoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -283,8 +283,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-56"/>
-        <source>Feathercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Feathercoins from being stolen by malware infecting your computer.</source>
-        <translation>Feathercoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Feathercoins from being stolen by malware infecting your computer.</translation>
+        <source>Fedoracoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Fedoracoins from being stolen by malware infecting your computer.</source>
+        <translation>Fedoracoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your Fedoracoins from being stolen by malware infecting your computer.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -377,8 +377,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Show information about Feathercoin</source>
-        <translation>Show information about Feathercoin</translation>
+        <source>Show information about Fedoracoin</source>
+        <translation>Show information about Fedoracoin</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -438,13 +438,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-405"/>
-        <source>Send coins to a Feathercoin address</source>
-        <translation>Send coins to a Feathercoin address</translation>
+        <source>Send coins to a Fedoracoin address</source>
+        <translation>Send coins to a Fedoracoin address</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Feathercoin</source>
-        <translation>Modify configuration options for Feathercoin</translation>
+        <source>Modify configuration options for Fedoracoin</source>
+        <translation>Modify configuration options for Fedoracoin</translation>
     </message>
     <message>
         <location line="+12"/>
@@ -473,8 +473,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+440"/>
-        <source>Feathercoin</source>
-        <translation>Feathercoin</translation>
+        <source>Fedoracoin</source>
+        <translation>Fedoracoin</translation>
     </message>
     <message>
         <location line="-652"/>
@@ -509,13 +509,13 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Feathercoin addresses to prove you own them</source>
-        <translation>Sign messages with your Feathercoin addresses to prove you own them</translation>
+        <source>Sign messages with your Fedoracoin addresses to prove you own them</source>
+        <translation>Sign messages with your Fedoracoin addresses to prove you own them</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Feathercoin addresses</source>
-        <translation>Verify messages to ensure they were signed with specified Feathercoin addresses</translation>
+        <source>Verify messages to ensure they were signed with specified Fedoracoin addresses</source>
+        <translation>Verify messages to ensure they were signed with specified Fedoracoin addresses</translation>
     </message>
     <message>
         <location line="+48"/>
@@ -545,19 +545,19 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-400"/>
-        <source>Feathercoin Core</source>
-        <translation>Feathercoin Core</translation>
+        <source>Fedoracoin Core</source>
+        <translation>Fedoracoin Core</translation>
     </message>
     <message>
         <location line="+162"/>
-        <source>Request payments (generates QR codes and Feathercoin: URIs)</source>
-        <translation>Request payments (generates QR codes and Feathercoin: URIs)</translation>
+        <source>Request payments (generates QR codes and Fedoracoin: URIs)</source>
+        <translation>Request payments (generates QR codes and Fedoracoin: URIs)</translation>
     </message>
     <message>
         <location line="+29"/>
         <location line="+2"/>
-        <source>&amp;About Feathercoin Core</source>
-        <translation>&amp;About Feathercoin Core</translation>
+        <source>&amp;About Fedoracoin Core</source>
+        <translation>&amp;About Fedoracoin Core</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -571,8 +571,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+3"/>
-        <source>Open a Feathercoin: URI or payment request</source>
-        <translation>Open a Feathercoin: URI or payment request</translation>
+        <source>Open a Fedoracoin: URI or payment request</source>
+        <translation>Open a Fedoracoin: URI or payment request</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -581,21 +581,21 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+1"/>
-        <source>Show the Feathercoin Core help message to get a list with possible Feathercoin command-line options</source>
-        <translation>Show the Feathercoin Core help message to get a list with possible Feathercoin command-line options</translation>
+        <source>Show the Fedoracoin Core help message to get a list with possible Fedoracoin command-line options</source>
+        <translation>Show the Fedoracoin Core help message to get a list with possible Fedoracoin command-line options</translation>
     </message>
     <message>
         <location line="+159"/>
         <location line="+5"/>
-        <source>Feathercoin client</source>
-        <translation>Feathercoin client</translation>
+        <source>Fedoracoin client</source>
+        <translation>Fedoracoin client</translation>
     </message>
     <message numerus="yes">
         <location line="+142"/>
-        <source>%n active connection(s) to Feathercoin network</source>
+        <source>%n active connection(s) to Fedoracoin network</source>
         <translation>
-            <numerusform>%n active connection to Feathercoin network</numerusform>
-            <numerusform>%n active connections to Feathercoin network</numerusform>
+            <numerusform>%n active connection to Fedoracoin network</numerusform>
+            <numerusform>%n active connections to Fedoracoin network</numerusform>
         </translation>
     </message>
     <message>
@@ -726,8 +726,8 @@ Address: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+441"/>
-        <source>A fatal error occurred. Feathercoin can no longer continue safely and will quit.</source>
-        <translation>A fatal error occurred. Feathercoin can no longer continue safely and will quit.</translation>
+        <source>A fatal error occurred. Fedoracoin can no longer continue safely and will quit.</source>
+        <translation>A fatal error occurred. Fedoracoin can no longer continue safely and will quit.</translation>
     </message>
 </context>
 <context>
@@ -1084,8 +1084,8 @@ Address: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Feathercoin address.</source>
-        <translation>The entered address &quot;%1&quot; is not a valid Feathercoin address.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid Fedoracoin address.</source>
+        <translation>The entered address &quot;%1&quot; is not a valid Fedoracoin address.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1130,13 +1130,13 @@ Address: %4
     <name>HelpMessageDialog</name>
     <message>
         <location filename="../forms/helpmessagedialog.ui" line="+19"/>
-        <source>Feathercoin Core - Command-line options</source>
-        <translation>Feathercoin Core - Command-line options</translation>
+        <source>Fedoracoin Core - Command-line options</source>
+        <translation>Fedoracoin Core - Command-line options</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+24"/>
-        <source>Feathercoin Core</source>
-        <translation>Feathercoin Core</translation>
+        <source>Fedoracoin Core</source>
+        <translation>Fedoracoin Core</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -1188,18 +1188,18 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Welcome to Feathercoin Core.</source>
-        <translation>Welcome to Feathercoin Core.</translation>
+        <source>Welcome to Fedoracoin Core.</source>
+        <translation>Welcome to Fedoracoin Core.</translation>
     </message>
     <message>
         <location line="+26"/>
-        <source>As this is the first time the program is launched, you can choose where Feathercoin Core will store its data.</source>
-        <translation>As this is the first time the program is launched, you can choose where Feathercoin Core will store its data.</translation>
+        <source>As this is the first time the program is launched, you can choose where Fedoracoin Core will store its data.</source>
+        <translation>As this is the first time the program is launched, you can choose where Fedoracoin Core will store its data.</translation>
     </message>
     <message>
         <location line="+10"/>
-        <source>Feathercoin Core will download and store a copy of the Feathercoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>Feathercoin Core will download and store a copy of the Feathercoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
+        <source>Fedoracoin Core will download and store a copy of the Fedoracoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>Fedoracoin Core will download and store a copy of the Fedoracoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1213,8 +1213,8 @@ Address: %4
     </message>
     <message>
         <location filename="../intro.cpp" line="+82"/>
-        <source>Feathercoin</source>
-        <translation>Feathercoin</translation>
+        <source>Fedoracoin</source>
+        <translation>Fedoracoin</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1289,13 +1289,13 @@ Address: %4
     </message>
     <message>
         <location line="-131"/>
-        <source>Automatically start Feathercoin after logging in to the system.</source>
-        <translation>Automatically start Feathercoin after logging in to the system.</translation>
+        <source>Automatically start Fedoracoin after logging in to the system.</source>
+        <translation>Automatically start Fedoracoin after logging in to the system.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Feathercoin on system login</source>
-        <translation>&amp;Start Feathercoin on system login</translation>
+        <source>&amp;Start Fedoracoin on system login</source>
+        <translation>&amp;Start Fedoracoin on system login</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -1319,8 +1319,8 @@ Address: %4
     </message>
     <message>
         <location line="+153"/>
-        <source>Connect to the Feathercoin network through a SOCKS proxy.</source>
-        <translation>Connect to the Feathercoin network through a SOCKS proxy.</translation>
+        <source>Connect to the Fedoracoin network through a SOCKS proxy.</source>
+        <translation>Connect to the Fedoracoin network through a SOCKS proxy.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1379,8 +1379,8 @@ Address: %4
     </message>
     <message>
         <location line="+17"/>
-        <source>Automatically open the Feathercoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Automatically open the Feathercoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
+        <source>Automatically open the Fedoracoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Automatically open the Fedoracoin client port on the router. This only works when your router supports UPnP and it is enabled.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1449,8 +1449,8 @@ Address: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Feathercoin.</source>
-        <translation>The user interface language can be set here. This setting will take effect after restarting Feathercoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting Fedoracoin.</source>
+        <translation>The user interface language can be set here. This setting will take effect after restarting Fedoracoin.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1464,8 +1464,8 @@ Address: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Feathercoin addresses in the transaction list or not.</source>
-        <translation>Whether to show Feathercoin addresses in the transaction list or not.</translation>
+        <source>Whether to show Fedoracoin addresses in the transaction list or not.</source>
+        <translation>Whether to show Fedoracoin addresses in the transaction list or not.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1534,8 +1534,8 @@ Address: %4
     <message>
         <location line="+50"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Feathercoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Feathercoin network after a connection is established, but this process has not completed yet.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Fedoracoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>The displayed information may be out of date. Your wallet automatically synchronizes with the Fedoracoin network after a connection is established, but this process has not completed yet.</translation>
     </message>
     <message>
         <location line="-238"/>
@@ -1604,8 +1604,8 @@ Address: %4
     </message>
     <message>
         <location line="+1"/>
-        <source>URI can not be parsed! This can be caused by an invalid Feathercoin address or malformed URI parameters.</source>
-        <translation>URI can not be parsed! This can be caused by an invalid Feathercoin address or malformed URI parameters.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid Fedoracoin address or malformed URI parameters.</source>
+        <translation>URI can not be parsed! This can be caused by an invalid Fedoracoin address or malformed URI parameters.</translation>
     </message>
     <message>
         <location line="+96"/>
@@ -1624,8 +1624,8 @@ Address: %4
     </message>
     <message>
         <location line="-353"/>
-        <source>Cannot start Feathercoin: click-to-pay handler</source>
-        <translation>Cannot start Feathercoin: click-to-pay handler</translation>
+        <source>Cannot start Fedoracoin: click-to-pay handler</source>
+        <translation>Cannot start Fedoracoin: click-to-pay handler</translation>
     </message>
     <message>
         <location line="+58"/>
@@ -1693,8 +1693,8 @@ Address: %4
     <message>
         <location filename="../bitcoin.cpp" line="+63"/>
         <location line="+14"/>
-        <source>Feathercoin</source>
-        <translation>Feathercoin</translation>
+        <source>Fedoracoin</source>
+        <translation>Fedoracoin</translation>
     </message>
     <message>
         <location line="-13"/>
@@ -1708,8 +1708,8 @@ Address: %4
     </message>
     <message>
         <location filename="../guiutil.cpp" line="+82"/>
-        <source>Enter a Feathercoin address (e.g. 6ds7JKXk2R78az3gP8JFEdHatB5o8sU7Vw)</source>
-        <translation>Enter a Feathercoin address (e.g. 6ds7JKXk2R78az3gP8JFEdHatB5o8sU7Vw)</translation>
+        <source>Enter a Fedoracoin address (e.g. 6ds7JKXk2R78az3gP8JFEdHatB5o8sU7Vw)</source>
+        <translation>Enter a Fedoracoin address (e.g. 6ds7JKXk2R78az3gP8JFEdHatB5o8sU7Vw)</translation>
     </message>
 </context>
 <context>
@@ -1871,8 +1871,8 @@ Address: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Feathercoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Open the Feathercoin debug log file from the current data directory. This can take a few seconds for large log files.</translation>
+        <source>Open the Fedoracoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Open the Fedoracoin debug log file from the current data directory. This can take a few seconds for large log files.</translation>
     </message>
     <message>
         <location line="+76"/>
@@ -1881,8 +1881,8 @@ Address: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-35"/>
-        <source>Welcome to the Feathercoin RPC console.</source>
-        <translation>Welcome to the Feathercoin RPC console.</translation>
+        <source>Welcome to the Fedoracoin RPC console.</source>
+        <translation>Welcome to the Fedoracoin RPC console.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1960,8 +1960,8 @@ Address: %4
     <message>
         <location line="+14"/>
         <location line="+23"/>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Feathercoin network.</source>
-        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Feathercoin network.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fedoracoin network.</source>
+        <translation>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Fedoracoin network.</translation>
     </message>
     <message>
         <location line="-7"/>
@@ -2356,8 +2356,8 @@ Address: %4
     </message>
     <message>
         <location line="+113"/>
-        <source>Warning: Invalid Feathercoin address</source>
-        <translation>Warning: Invalid Feathercoin address</translation>
+        <source>Warning: Invalid Fedoracoin address</source>
+        <translation>Warning: Invalid Fedoracoin address</translation>
     </message>
     <message>
         <location line="+20"/>
@@ -2468,8 +2468,8 @@ Address: %4
     </message>
     <message>
         <location line="+33"/>
-        <source>A message that was attached to the Feathercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Feathercoin network.</source>
-        <translation>A message that was attached to the Feathercoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Feathercoin network.</translation>
+        <source>A message that was attached to the Fedoracoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fedoracoin network.</source>
+        <translation>A message that was attached to the Fedoracoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Fedoracoin network.</translation>
     </message>
     <message>
         <location line="+426"/>
@@ -2493,8 +2493,8 @@ Address: %4
     <name>ShutdownWindow</name>
     <message>
         <location filename="../utilitydialog.cpp" line="+48"/>
-        <source>Feathercoin Core is shutting down...</source>
-        <translation>Feathercoin Core is shutting down...</translation>
+        <source>Fedoracoin Core is shutting down...</source>
+        <translation>Fedoracoin Core is shutting down...</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2563,8 +2563,8 @@ Address: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Feathercoin address</source>
-        <translation>Sign the message to prove you own this Feathercoin address</translation>
+        <source>Sign the message to prove you own this Fedoracoin address</source>
+        <translation>Sign the message to prove you own this Fedoracoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2599,8 +2599,8 @@ Address: %4
     </message>
     <message>
         <location line="+37"/>
-        <source>Verify the message to ensure it was signed with the specified Feathercoin address</source>
-        <translation>Verify the message to ensure it was signed with the specified Feathercoin address</translation>
+        <source>Verify the message to ensure it was signed with the specified Fedoracoin address</source>
+        <translation>Verify the message to ensure it was signed with the specified Fedoracoin address</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -2614,8 +2614,8 @@ Address: %4
     </message>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+30"/>
-        <source>Enter a Feathercoin address (e.g. 6ds7JKXk2R78az3gP8JFEdHatB5o8sU7Vw)</source>
-        <translation>Enter a Feathercoin address (e.g. 6ds7JKXk2R78az3gP8JFEdHatB5o8sU7Vw)</translation>
+        <source>Enter a Fedoracoin address (e.g. 6ds7JKXk2R78az3gP8JFEdHatB5o8sU7Vw)</source>
+        <translation>Enter a Fedoracoin address (e.g. 6ds7JKXk2R78az3gP8JFEdHatB5o8sU7Vw)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -2693,13 +2693,13 @@ Address: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+28"/>
-        <source>Feathercoin Core</source>
-        <translation>Feathercoin Core</translation>
+        <source>Fedoracoin Core</source>
+        <translation>Fedoracoin Core</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>The Feathercoin Core developers</source>
-        <translation>The Feathercoin Core developers</translation>
+        <source>The Fedoracoin Core developers</source>
+        <translation>The Fedoracoin Core developers</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3292,7 +3292,7 @@ Address: %4
     </message>
 </context>
 <context>
-    <name>Feathercoin-core</name>
+    <name>Fedoracoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+226"/>
         <source>Usage:</source>
@@ -3315,13 +3315,13 @@ Address: %4
     </message>
     <message>
         <location line="+22"/>
-        <source>Specify configuration file (default: feathercoin.conf)</source>
-        <translation>Specify configuration file (default: feathercoin.conf)</translation>
+        <source>Specify configuration file (default: fedoracoin.conf)</source>
+        <translation>Specify configuration file (default: fedoracoin.conf)</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Specify pid file (default: feathercoind.pid)</source>
-        <translation>Specify pid file (default: feathercoind.pid)</translation>
+        <source>Specify pid file (default: fedoracoind.pid)</source>
+        <translation>Specify pid file (default: fedoracoind.pid)</translation>
     </message>
     <message>
         <location line="-1"/>
@@ -3393,24 +3393,24 @@ Address: %4
         <source>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Feathercoinrpc
+rpcuser=Fedoracoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Fedoracoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, you must set a rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=Feathercoinrpc
+rpcuser=Fedoracoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Fedoracoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3465,8 +3465,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Unable to bind to %s on this computer. Feathercoin Core is probably already running.</source>
-        <translation>Unable to bind to %s on this computer. Feathercoin Core is probably already running.</translation>
+        <source>Unable to bind to %s on this computer. Fedoracoin Core is probably already running.</source>
+        <translation>Unable to bind to %s on this computer. Fedoracoin Core is probably already running.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3480,8 +3480,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Feathercoin will not work properly.</source>
-        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Feathercoin will not work properly.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Fedoracoin will not work properly.</source>
+        <translation>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Fedoracoin will not work properly.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3515,13 +3515,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Feathercoin Core Daemon</source>
-        <translation>Feathercoin Core Daemon</translation>
+        <source>Fedoracoin Core Daemon</source>
+        <translation>Fedoracoin Core Daemon</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Feathercoin RPC client version</source>
-        <translation>Feathercoin RPC client version</translation>
+        <source>Fedoracoin RPC client version</source>
+        <translation>Fedoracoin RPC client version</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3725,8 +3725,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to Feathercoin server</source>
-        <translation>Send command to Feathercoin server</translation>
+        <source>Send command to Fedoracoin server</source>
+        <translation>Send command to Fedoracoin server</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -3755,8 +3755,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Start Feathercoin server</source>
-        <translation>Start Feathercoin server</translation>
+        <source>Start Fedoracoin server</source>
+        <translation>Start Fedoracoin server</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -3765,8 +3765,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@
     </message>
     <message>
         <location line="+10"/>
-        <source>Usage (deprecated, use feathercoin-cli):</source>
-        <translation>Usage (deprecated, use feathercoin-cli):</translation>
+        <source>Usage (deprecated, use fedoracoin-cli):</source>
+        <translation>Usage (deprecated, use fedoracoin-cli):</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -3810,8 +3810,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@
     </message>
     <message>
         <location line="-126"/>
-        <source>Cannot obtain a lock on data directory %s. Feathercoin Core is probably already running.</source>
-        <translation>Cannot obtain a lock on data directory %s. Feathercoin Core is probably already running.</translation>
+        <source>Cannot obtain a lock on data directory %s. Fedoracoin Core is probably already running.</source>
+        <translation>Cannot obtain a lock on data directory %s. Fedoracoin Core is probably already running.</translation>
     </message>
     <message>
         <location line="+19"/>
@@ -3875,8 +3875,8 @@ for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@
     </message>
     <message>
         <location line="+9"/>
-        <source>SSL options: (see the Feathercoin Wiki for SSL setup instructions)</source>
-        <translation>SSL options: (see the Feathercoin Wiki for SSL setup instructions)</translation>
+        <source>SSL options: (see the Fedoracoin Wiki for SSL setup instructions)</source>
+        <translation>SSL options: (see the Fedoracoin Wiki for SSL setup instructions)</translation>
     </message>
     <message>
         <location line="+4"/>
@@ -4040,13 +4040,13 @@ for example: alertnotify=echo %%s | mail -s &quot;Feathercoin Alert&quot; admin@
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Feathercoin</source>
-        <translation>Error loading wallet.dat: Wallet requires newer version of Feathercoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of Fedoracoin</source>
+        <translation>Error loading wallet.dat: Wallet requires newer version of Fedoracoin</translation>
     </message>
     <message>
         <location line="+99"/>
-        <source>Wallet needed to be rewritten: restart Feathercoin to complete</source>
-        <translation>Wallet needed to be rewritten: restart Feathercoin to complete</translation>
+        <source>Wallet needed to be rewritten: restart Fedoracoin to complete</source>
+        <translation>Wallet needed to be rewritten: restart Fedoracoin to complete</translation>
     </message>
     <message>
         <location line="-101"/>

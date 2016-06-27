@@ -1,4 +1,4 @@
-Feathercoin Core version 0.9.x is now available from:
+Fedoracoin Core version 0.9.x is now available from:
 
 
 This is a new major version release, bringing both new features and
@@ -6,7 +6,7 @@ bug fixes.
 
 Please report bugs using the issue tracker at github:
 
-  https://github.com/Feathercoin/Feathercoin/issues
+  https://github.com/Fedoracoin/Fedoracoin/issues
 
 How to Upgrade
 --------------
@@ -14,20 +14,20 @@ How to Upgrade
 - If you are running an older version.
 
   - shut it down. Wait until it has completely shut down (which might take a few minutes 
-    for older versions). On Windows and MAC uninstall all earlier versions of Feathercoin, 
-    then run the installer on Windows or just copy over /Applications/Feathercoin-Qt (on Mac) 
+    for older versions). On Windows and MAC uninstall all earlier versions of Fedoracoin, 
+    then run the installer on Windows or just copy over /Applications/Fedoracoin-Qt (on Mac) 
 
 On Linux:
-- If you previously have installed a packaged Version of Feathercoin, use yur packagee manager to 
-  update Feathercoin. For Debian and Ubuntu based systems this is typically issued by the command 
-  'apt-get update' followed by 'apt-get upgrade feathercoin' run as root.
+- If you previously have installed a packaged Version of Fedoracoin, use yur packagee manager to 
+  update Fedoracoin. For Debian and Ubuntu based systems this is typically issued by the command 
+  'apt-get update' followed by 'apt-get upgrade fedoracoin' run as root.
   
-- If you are running a self compiled version of feathercoind or feathercoin-qt either:
-  - get the sources from https://github.com/Feathercoin/Feathercoin and compile them yourself
+- If you are running a self compiled version of fedoracoind or fedoracoin-qt either:
+  - get the sources from https://github.com/Fedoracoin/Fedoracoin and compile them yourself
  
  or
-  - download the pre-compiled packages for your distribution from https://software.opensuse.org/package/feathercoin
-    look for unstable packages, as the feathercoin package currently is not officially certified by the distributions
+  - download the pre-compiled packages for your distribution from https://software.opensuse.org/package/fedoracoin
+    look for unstable packages, as the fedoracoin package currently is not officially certified by the distributions
   - install the package using your package manager.
   - optional: add the repository and public key of the repository to the list of trusted repositrories to get 
     automated updates in the future.
@@ -38,7 +38,7 @@ If you are upgrading from version 0.7.2 or earlier, the first time you run
 0.9.x your blockchain files will be re-indexed, which will take anywhere from 
 30 minutes to several hours, depending on the speed of your machine.
 
-On Windows, do not forget to uninstall all earlier versions of the Feathercoin
+On Windows, do not forget to uninstall all earlier versions of the Fedoracoin
 client first, especially if you are switching to the 64-bit version.
 
 Windows 64-bit installer
@@ -76,11 +76,11 @@ Also, the first time you run a 0.8.x release on a 0.9 wallet it will rescan
 the blockchain for missing spent coins, which will take a long time (tens
 of minutes on a typical machine).
 
-Rebranding to Feathercoin Core
+Rebranding to Fedoracoin Core
 ---------------------------
 
-To reduce confusion between Feathercoin-the-network and Feathercoin-the-software we
-have renamed the reference client to Feathercoin Core.
+To reduce confusion between Fedoracoin-the-network and Fedoracoin-the-software we
+have renamed the reference client to Fedoracoin Core.
 
 
 OP_RETURN and data in the block chain
@@ -102,13 +102,13 @@ Autotools build system
 For 0.9.x we switched to an autotools-based build system instead of individual
 (q)makefiles.
 
-Using the standard "./autogen.sh; ./configure; make" to build Feathercoin-Qt and
+Using the standard "./autogen.sh; ./configure; make" to build Fedoracoin-Qt and
 bitcoind makes it easier for experienced open source developers to contribute 
 to the project.
 
 Be sure to check doc/build-*.md for your platform before building from source.
 
-Feathercoin-cli
+Fedoracoin-cli
 -------------
 
 Another change in the 0.9 release is moving away from the bitcoind executable
@@ -312,7 +312,7 @@ GUI:
 - Add Coin Control Features
 - Improve receive coins workflow: make the 'Receive' tab into a form to request
   payments, and move historical address list functionality to File menu.
-- Rebrand to `Feathercoin Core`
+- Rebrand to `Fedoracoin Core`
 - Move initialization/shutdown to a thread. This prevents "Not responding"
   messages during startup. Also show a window during shutdown.
 - Don't regenerate autostart link on every client startup

@@ -101,7 +101,7 @@
              <cursorShape>IBeamCursor</cursorShape>
             </property>
             <property name="text">
-             <string>0.00000 FTC</string>
+             <string>0.00000 TIPS</string>
             </property>
             <property name="textInteractionFlags">
              <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -289,7 +289,7 @@
                  <item>
                   <widget class="QLabel" name="labelAvailableCoins">
                    <property name="text">
-                    <string>0 FTC</string>
+                    <string>0 TIPS</string>
                    </property>
                   </widget>
                  </item>

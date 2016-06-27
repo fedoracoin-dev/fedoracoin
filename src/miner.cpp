@@ -472,7 +472,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         return false;
 
     //// debug print
-    LogPrintf("FeathercoinMiner:\n");
+    LogPrintf("FedoracoinMiner:\n");
     LogPrintf("proof-of-work found  \n  hash: %s  \ntarget: %s\n", hash.GetHex(), hashTarget.GetHex());
     pblock->print();
     LogPrintf("generated %s\n", FormatMoney(pblock->vtx[0].vout[0].nValue));
@@ -481,7 +481,7 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
     {
         LOCK(cs_main);
         if (pblock->hashPrevBlock != chainActive.Tip()->GetBlockHash())
-            return error("FeathercoinMiner : generated block is stale");
+            return error("FedoracoinMiner : generated block is stale");
 
         // Remove key from key pool
         reservekey.KeepKey();
@@ -495,17 +495,17 @@ bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
         // Process this block the same as if we had received it from another node
         CValidationState state;
         if (!ProcessBlock(state, NULL, pblock))
-            return error("FeathercoinMiner : ProcessBlock, block not accepted");
+            return error("FedoracoinMiner : ProcessBlock, block not accepted");
     }
 
     return true;
 }
 
-void static FeathercoinMiner(CWallet *pwallet)
+void static FedoracoinMiner(CWallet *pwallet)
 {
-    LogPrintf("FeathercoinMiner started\n");
+    LogPrintf("FedoracoinMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("feathercoin-miner");
+    RenameThread("fedoracoin-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
@@ -531,7 +531,7 @@ void static FeathercoinMiner(CWallet *pwallet)
         CBlock *pblock = &pblocktemplate->block;
         IncrementExtraNonce(pblock, pindexPrev, nExtraNonce);
 
-        LogPrintf("Running FeathercoinMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
+        LogPrintf("Running FedoracoinMiner with %u transactions in block (%u bytes)\n", pblock->vtx.size(),
                ::GetSerializeSize(*pblock, SER_NETWORK, PROTOCOL_VERSION));
 
         //
@@ -641,7 +641,7 @@ void static FeathercoinMiner(CWallet *pwallet)
     } }
     catch (boost::thread_interrupted)
     {
-        LogPrintf("FeathercoinMiner terminated\n");
+        LogPrintf("FedoracoinMiner terminated\n");
         throw;
     }
 }
@@ -669,7 +669,7 @@ void GenerateBitcoins(bool fGenerate, CWallet* pwallet, int nThreads)
 
     minerThreads = new boost::thread_group();
     for (int i = 0; i < nThreads; i++)
-        minerThreads->create_thread(boost::bind(&FeathercoinMiner, pwallet));
+        minerThreads->create_thread(boost::bind(&FedoracoinMiner, pwallet));
 }
 
 #endif

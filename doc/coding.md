@@ -89,6 +89,6 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 8332 for connections and services them.
 
-- FeathercoinMiner : Generates feathercoins (if wallet is enabled).
+- FedoracoinMiner : Generates fedoracoins (if wallet is enabled).
 
 - Shutdown : Does an orderly shutdown of everything.

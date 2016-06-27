@@ -22,7 +22,7 @@ FORMS += \
 
 RESOURCES += \
     ../src/qt/bitcoin.qrc \
-    ../src/qt/feathercoin.qrc
+    ../src/qt/fedoracoin.qrc
     
 QT += \
     printsupport

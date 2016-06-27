@@ -2,9 +2,9 @@
 *.exe
 *.directory
 
-src/feathercoin
-src/feathercoind
-src/feathercoin-cli
+src/fedoracoin
+src/fedoracoind
+src/fedoracoin-cli
 src/bitcoin-config.h
 src/bitcoin-config.h
 src/Makefile.in
@@ -55,8 +55,8 @@ configure
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-feathercoin-qt
-Feathercoin-Qt.app
+fedoracoin-qt
+Fedoracoin-Qt.app
 
 # Unit-tests
 Makefile.test

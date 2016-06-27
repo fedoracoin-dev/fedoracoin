@@ -23,9 +23,9 @@ public:
      */
     enum Unit
     {
-        FTC,
-        mFTC,
-        uFTC
+        TIPS,
+        mTIPS,
+        uTIPS
     };
 
     //! @name Static API

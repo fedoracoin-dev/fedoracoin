@@ -27,7 +27,7 @@ SignVerifyMessageDialog::SignVerifyMessageDialog(QWidget *parent) :
 
 #if QT_VERSION >= 0x040700
     ui->signatureOut_SM->setPlaceholderText(tr("Click \"Sign Message\" to generate signature"));
-    ui->addressIn_VM->setPlaceholderText(tr("Enter a Feathercoin address (e.g. 6djzFXtrfK8axEpEhSPe5o7YgJ16gFjSw7)"));
+    ui->addressIn_VM->setPlaceholderText(tr("Enter a Fedoracoin address (e.g. 6djzFXtrfK8axEpEhSPe5o7YgJ16gFjSw7)"));
 #endif
 
     GUIUtil::setupAddressWidget(ui->addressIn_SM, this);

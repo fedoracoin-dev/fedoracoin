@@ -26,7 +26,7 @@
     <string>Scan Stealth Transactions</string>
    </property>
    <property name="icon">
-    <iconset resource="../feathercoin.qrc">
+    <iconset resource="../fedoracoin.qrc">
      <normaloff>:/icons/sx</normaloff>:/icons/sx</iconset>
    </property>
   </widget>
@@ -94,7 +94,7 @@
     <string>Exit</string>
    </property>
    <property name="icon">
-    <iconset resource="../feathercoin.qrc">
+    <iconset resource="../fedoracoin.qrc">
      <normaloff>:/icons/quit</normaloff>:/icons/quit</iconset>
    </property>
   </widget>
@@ -129,7 +129,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../feathercoin.qrc"/>
+  <include location="../fedoracoin.qrc"/>
  </resources>
  <connections/>
 </ui>

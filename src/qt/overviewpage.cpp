@@ -24,7 +24,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::FTC)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::TIPS)
     {
 
     }
@@ -188,7 +188,7 @@ void OverviewPage::setWalletModel(WalletModel *model)
         connect(model->getOptionsModel(), SIGNAL(displayUnitChanged(int)), this, SLOT(updateDisplayUnit()));
     }
 
-    // update the display unit, to not use the default ("FTC")
+    // update the display unit, to not use the default ("TIPS")
     updateDisplayUnit();
 }
 

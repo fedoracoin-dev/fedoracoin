@@ -2,8 +2,8 @@
    Lizhi
 */
 
-#ifndef FEATHERCOIN_BASE40_H
-#define FEATHERCOIN_BASE40_H
+#ifndef FEDORACOIN_BASE40_H
+#define FEDORACOIN_BASE40_H
 
 #include <stdint.h>
 #include <stdio.h>
@@ -121,4 +121,4 @@ std::string unhexlify(std::string inData)
 
 
 
-#endif // FEATHERCOIN_BASE40_H
+#endif // FEDORACOIN_BASE40_H
