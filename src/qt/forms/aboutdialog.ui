@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>555</width>
-    <height>419</height>
+    <height>457</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -124,7 +124,7 @@
         </font>
        </property>
        <property name="text">
-        <string>cryptoid, myc066, plast555, psycodad, smarterhash and</string>
+        <string>cryptoid, myc066, plast555, psycodad, smarterhash, testbug</string>
        </property>
       </widget>
      </item>
@@ -139,7 +139,7 @@
         </font>
        </property>
        <property name="text">
-        <string>an anon donator.</string>
+        <string>and an anonymous donator.</string>
        </property>
       </widget>
      </item>
@@ -147,6 +147,58 @@
       <widget class="QLabel" name="label_11">
        <property name="text">
         <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_17">
+       <property name="text">
+        <string>Donations for wallet enhancements can be sent to mrbodz:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_18">
+       <property name="text">
+        <string>BTC: 12tSquEBTgs2WsHXgh5kKD8hNwvsrvo7o1</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_12">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_13">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>This product includes software developed by the OpenSSL Project for use</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Distributed under the MIT/X11 software license, see the accompanying file</string>
        </property>
       </widget>
      </item>
@@ -172,25 +224,6 @@
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="label_12">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_3">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Distributed under the MIT/X11 software license, see the accompanying file</string>
-       </property>
-      </widget>
-     </item>
-     <item>
       <widget class="QLabel" name="label_6">
        <property name="font">
         <font>
@@ -199,25 +232,6 @@
        </property>
        <property name="text">
         <string>COPYING or http://www.opensource.org/licenses/mit-license.php.</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_13">
-       <property name="text">
-        <string/>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLabel" name="label_5">
-       <property name="font">
-        <font>
-         <pointsize>9</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>This product includes software developed by the OpenSSL Project for use</string>
        </property>
       </widget>
      </item>
